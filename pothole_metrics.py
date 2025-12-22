@@ -1,34 +1,58 @@
 import numpy as np
 
-# Example thresholds from IJISRT paper idea: volume‑based class. [file:23]
-def classify_pothole(volume_cm3: float) -> str:
-    if volume_cm3 < 1000:
+
+def classify_pothole_volume_m3(volume_m3: float) -> str:
+    """
+    Classify pothole severity based on volume in m³.
+    """
+    if volume_m3 < 0.02:
         return "Small"
-    elif volume_cm3 < 10000:
+    elif volume_m3 < 0.1:
         return "Medium"
     else:
         return "Large"
 
-def estimate_volume(depth_region: np.ndarray, pixel_area_cm2: float) -> float:
-    """
-    Approximate volume = mean_depth_cm * area_cm2.
-    depth_region: normalized 0–1 depth; assume max depth ~ D_max_cm.
-    """
-    D_max_cm = 20.0  # tune later
-    mean_norm = float(depth_region.mean())
-    mean_depth_cm = mean_norm * D_max_cm
-    return mean_depth_cm * pixel_area_cm2
 
-def cost_time_rules(volume_cm3: float):
+def estimate_volume_cm3(
+    depth_region: np.ndarray,
+    pixel_area_cm2: float,
+    max_depth_cm: float,
+) -> float:
     """
-    Simple rule‑based cost/time inspired by IJISRT:
-    Small: 20 min, 1400–1600 INR
-    Medium: 30–40 min, 2700–3000 INR
-    Large: 50 min, 5000–7000 INR
+    Estimate volume in cm³ for a pothole region.
+
+    depth_region: normalized depth values (0–1) inside bbox.
+    pixel_area_cm2: area represented by each pixel.
+    max_depth_cm: depth corresponding to normalized value 1.
     """
-    cat = classify_pothole(volume_cm3)
-    if cat == "Small":
-        return cat, (1400, 1600), 20
-    if cat == "Medium":
-        return cat, (2700, 3000), 35
-    return cat, (5000, 7000), 50
+    if depth_region.size == 0:
+        return 0.0
+
+    mean_norm = float(depth_region.mean())
+    mean_depth_cm = max(mean_norm * max_depth_cm, 0.1)
+    volume_cm3 = mean_depth_cm * pixel_area_cm2 * depth_region.size
+    return volume_cm3
+
+
+def cost_time_from_volume(
+    volume_cm3: float,
+    rate_min_rs_per_m3: float,
+    rate_max_rs_per_m3: float,
+):
+    """
+    Compute severity, cost range (₹), and time (minutes) from volume.
+    """
+    volume_m3 = volume_cm3 / 1e6
+    severity = classify_pothole_volume_m3(volume_m3)
+
+    cost_min = volume_m3 * rate_min_rs_per_m3
+    cost_max = volume_m3 * rate_max_rs_per_m3
+
+    if severity == "Small":
+        minutes = 15
+    elif severity == "Medium":
+        minutes = 30
+    else:
+        minutes = 45
+
+    return severity, (round(cost_min), round(cost_max)), minutes

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+  body {
+    background: linear-gradient(135deg, #d6e6f2 0%, #ffffff 45%, #c8abe6 100%);
+  }
+  .map-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:1rem;
+  }
+  .map-header h1 {
+    font-size:1.4rem;
+    margin:0;
+    color:#1f2933;
+  }
+  .btn-back {
+    padding:0.45rem 1rem;
+    border-radius:999px;
+    border:1px solid #d1d5db;
+    background:#ffffff;
+    font-size:0.85rem;
+    text-decoration:none;
+    color:#111827;
+  }
+  .map-wrapper {
+    background:#ffffff;
+    border-radius:24px;
+    padding:0.8rem;
+    box-shadow:
+      0 18px 45px rgba(148,163,184,0.35),
+      0 0 0 1px rgba(148,163,184,0.3);
+  }
+</style>
+
+<div class="map-header">
+  <h1>Pothole map (OpenStreetMap)</h1>
+  <a href="{{ url_for('dashboard') }}" class="btn-back">Back to dashboard</a>
+</div>
+
+<div class="map-wrapper">
+  {{ map_html|safe }}
+</div>
+
+{% endblock %}

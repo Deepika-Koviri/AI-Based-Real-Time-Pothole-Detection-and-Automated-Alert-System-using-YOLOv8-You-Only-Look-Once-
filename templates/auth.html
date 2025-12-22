@@ -1,0 +1,355 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+  :root {
+    --bg-main: #d6e6f2;
+    --bg-card: #ffffff;
+    --accent: #6eb8e1;
+    --accent-soft: #c8abe6;
+    --text-main: #1f2933;
+    --text-muted: #6b7280;
+    --border-subtle: #e5e7eb;
+  }
+
+  body {
+    background: linear-gradient(135deg, #d6e6f2 0%, #ffffff 45%, #c8abe6 100%);
+  }
+
+  .auth-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    gap: 2.5rem;
+    align-items: center;
+    min-height: calc(100vh - 3rem);
+  }
+
+  /* HERO LEFT */
+  .hero {
+    padding: 2.5rem 2rem;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(110, 184, 225, 0.15);
+    color: #2563eb;
+    font-size: 0.78rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+    line-height: 1.15;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 0.7rem;
+  }
+
+  .hero-sub {
+    font-size: 0.98rem;
+    color: var(--text-muted);
+    max-width: 26rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.2rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    flex-wrap: wrap;
+  }
+
+  .hero-pill {
+    padding: 0.3rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(200, 171, 230, 0.18);
+  }
+
+  /* CARD RIGHT */
+  .auth-card {
+    background: var(--bg-card);
+    border-radius: 24px;
+    padding: 1.8rem 2rem 2rem;
+    box-shadow:
+      0 18px 45px rgba(15, 23, 42, 0.12),
+      0 0 0 1px rgba(148, 163, 184, 0.2);
+  }
+
+  .auth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.4rem;
+  }
+
+  .auth-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-main);
+  }
+
+  .auth-header p {
+    margin: 0.15rem 0 0;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+  }
+
+  .logout-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: #f3f4ff;
+    color: #4b5563;
+  }
+
+  .form-section-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 0.15rem;
+  }
+
+  .form-section-sub {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+  }
+
+  label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+  }
+
+  .field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 10rem;
+    flex: 1 1 45%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    border-radius: 999px;
+    border: 1px solid var(--border-subtle);
+    padding: 0.45rem 0.9rem;
+    font-size: 0.85rem;
+    background: #f9fafb;
+    color: var(--text-main);
+  }
+
+  input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #ffffff;
+    box-shadow: 0 0 0 1px rgba(110, 184, 225, 0.5);
+  }
+
+  .btn-auth {
+    border-radius: 999px;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+    color: #ffffff;
+  }
+
+  /* SIGNUP MODAL */
+  #signup-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+
+  #signup-modal .modal-card {
+    background: #ffffff;
+    border-radius: 22px;
+    padding: 1.7rem 1.8rem 1.9rem;
+    max-width: 420px;
+    width: 100%;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.35);
+  }
+
+  @media (max-width: 960px) {
+    .auth-shell {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.6rem;
+      padding-top: 1rem;
+    }
+    .hero {
+      padding: 1.4rem 0.4rem 0;
+      text-align: center;
+    }
+    .hero-sub,
+    .hero-stats {
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+    .auth-card {
+      padding: 1.5rem 1.4rem 1.7rem;
+    }
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .field-group {
+      width: 100%;
+    }
+    .btn-auth {
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+</style>
+
+<div class="auth-shell">
+  <!-- LEFT HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span>AI Pothole Detection</span>
+      <span style="font-size:0.7rem;">Smart road safety dashboard</span>
+    </div>
+
+    <h1 class="hero-title">
+      Monitor city roads<br>with depth‑aware detection.
+    </h1>
+
+    <p class="hero-sub">
+      Upload road images, estimate pothole volume and repair cost, and
+      generate location‑aware alerts for faster maintenance decisions.
+    </p>
+
+    <div class="hero-stats">
+      <span class="hero-pill">YOLOv8 + MiDaS depth</span>
+      <span class="hero-pill">Volume &amp; cost estimation</span>
+      <span class="hero-pill">Location‑tagged alerts</span>
+    </div>
+  </section>
+
+  <!-- RIGHT LOGIN CARD -->
+  <section class="auth-card">
+    <div class="auth-header">
+      <div>
+        <h2>Get started</h2>
+        <p>Login to open the detection dashboard.</p>
+      </div>
+      <span class="logout-tag">Logged out</span>
+    </div>
+
+    <div>
+      <div class="form-section-title">Login</div>
+      <p class="form-section-sub">Use your registered email and password.</p>
+
+      <form method="POST">
+        <input type="hidden" name="form_type" value="login" />
+        <div class="field-group">
+          <label>Email</label>
+          <input type="email" name="email_login" required />
+        </div>
+        <div class="field-group">
+          <label>Password</label>
+          <input type="password" name="password_login" required />
+        </div>
+        <button type="submit" class="btn-auth btn-primary">Login</button>
+      </form>
+
+      <p style="font-size:0.8rem; color:#6b7280; margin-top:0.6rem;">
+        New here?
+        <a href="#" id="open-signup"
+           style="color:#3b82f6; font-weight:500; text-decoration:none;">
+          Create an account.
+        </a>
+      </p>
+    </div>
+  </section>
+</div>
+
+<!-- SIGNUP POPUP -->
+<div id="signup-modal">
+  <div class="modal-card">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.8rem;">
+      <div>
+        <h3 style="margin:0; font-size:1.1rem; color:#111827;">Create account</h3>
+        <p style="margin:0.2rem 0 0; font-size:0.8rem; color:#6b7280;">
+          One step to access the pothole detection dashboard.
+        </p>
+      </div>
+      <button id="close-signup"
+              style="border:none; background:transparent; font-size:1.1rem; cursor:pointer;">
+        ×
+      </button>
+    </div>
+
+    <form method="POST">
+      <input type="hidden" name="form_type" value="signup" />
+      <div class="field-group" style="margin-bottom:0.5rem;">
+        <label>Full name</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="field-group" style="margin-bottom:0.5rem;">
+        <label>Email</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="field-group" style="margin-bottom:0.8rem;">
+        <label>Password</label>
+        <input type="password" name="password" required />
+      </div>
+      <button type="submit" class="btn-auth btn-primary" style="width:100%;">
+        Create account
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const openSignup = document.getElementById('open-signup');
+  const closeSignup = document.getElementById('close-signup');
+  const signupModal = document.getElementById('signup-modal');
+
+  if (openSignup && signupModal) {
+    openSignup.addEventListener('click', function (e) {
+      e.preventDefault();
+      signupModal.style.display = 'flex';
+    });
+  }
+  if (closeSignup && signupModal) {
+    closeSignup.addEventListener('click', function () {
+      signupModal.style.display = 'none';
+    });
+  }
+  if (signupModal) {
+    signupModal.addEventListener('click', function (e) {
+      if (e.target === signupModal) signupModal.style.display = 'none';
+    });
+  }
+</script>
+
+{% endblock %}

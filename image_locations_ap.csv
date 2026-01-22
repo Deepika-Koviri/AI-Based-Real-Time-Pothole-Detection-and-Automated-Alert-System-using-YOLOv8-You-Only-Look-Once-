@@ -1,0 +1,2272 @@
+image_path,place_name,lat,lon,severity
+train/images/China_MotorBike_000234.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0066982.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_008372.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_000595.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/img-854_jpg.rf.610f1c3f0598e1b652758bd064c69d32.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0064537.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/China_MotorBike_001047.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0029049.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_000578.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0090266.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_005586.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_005577.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/India_003125.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_005164.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0043289.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0029019.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0052782.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_006187.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0084374.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011555.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0016562.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_005804.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Norway_000922.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/G0011839.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Norway_002456.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+valid/images/img-61_jpg.rf.a90cbd2da26633925c4bc0eb783ba58f.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Japan_012546.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0089107.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0335487.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/img-95_jpg.rf.1eb3a1ae8fa5834b3fbbf08eab032e59.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_001812.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0094425.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/Norway_004123.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_008957.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_011054.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_008168.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+valid/images/G0011620.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-1255_jpg.rf.dae20176b2f8a0862e4939fcf3a2bfcd.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0052686.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0064561.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Czech_000883.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_001687.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_002095.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0027190.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-1256_jpg.rf.20fe5726944fb412f4d1cb364f81caf2.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/China_MotorBike_001217.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Norway_007638.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0029314.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0066625.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_009123.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/China_MotorBike_001811.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/img-43_jpg.rf.328d7c03cb91b1ee56a1bc6ab036a298.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/img-146_jpg.rf.2e88160fb02a1b63b1b2e03daf168aee.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/img-502_jpg.rf.6ca14a2dbbdbef79d541c9b3cd39f110.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_001667.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Norway_000145.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0029947.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/img-1365_jpg.rf.8d2a5f38fd476372abed22451e729d30.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+valid/images/G0011938.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-586_jpg.rf.c599e62337598393ee94ecae83a5328a.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Norway_000440.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_006595.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0145175.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0016692.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_005269.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_007345.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0030675.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0026519.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_003318.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_001215.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0090230.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_000017.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0041119.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_011374.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0073887.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/img-401_jpg.rf.e3fe79f6f1c41b1dd0ce8ea904b39401.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-547_jpg.rf.8dd4b5b2099318a1bb39ad348cbe0576.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0348189.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/India_001596.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/img-282_jpg.rf.a0ac2a228cf0edb961017e538356b5af.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_007604.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_007683.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0064572.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Czech_002365.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/India_003126.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/United_States_004275.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_007034.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_012839.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0067064.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_001526.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_011328.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_006502.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/G0011877.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_002301.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_008714.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0052912.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/Japan_008804.jpg,Siripuram Junction,17.713000,83.320000,Large
+valid/images/G0011661.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0089519.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+valid/images/img-74_jpg.rf.b6a7c408ac473908998a74a364e61587.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0028285.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_009663.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-1472_jpg.rf.524781ccc0820e7de3842f6759c65d2f.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_008188.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_010350.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_006325.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/China_MotorBike_000651.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Norway_005104.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0064139.jpg,Venkojipalem Road,17.750000,83.327000,Large
+valid/images/G0011619.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0032754.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/img-121_jpg.rf.d202af2960b0bb1928539a6fcb3cdbfd.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_003879.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_000475.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0064034.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-70_jpg.rf.c64a3fa4382e8482aa49dd4c38c7012b.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/China_MotorBike_000419.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/img-94_jpg.rf.1e682038e4cad99a47d4f47be7051a78.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_008263.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0027891.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Norway_008140.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_006368.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-519_jpg.rf.6ba359e3644a97cd8bffee4cf4a10ea2.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_009481.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+valid/images/G0011525.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_003803.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/Japan_007900.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0257074.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0066963.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/China_MotorBike_001535.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0090364.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-630_jpg.rf.daa4c95b49226642dd5f9fa9d0d5b857.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_008954.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/img-1330_jpg.rf.dab7b971484b543ac9667fb4727e7cf1.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-1455_jpg.rf.99e539cf03e5483989399e950538cc15.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+valid/images/G0011610.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/China_MotorBike_001449.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/img-1009_jpg.rf.bc04e1389f0e4ef643e18192971a075e.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/Japan_009494.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_010944.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0028544.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0030529.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0064442.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0031530.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-301_jpg.rf.51e9d06820d0d552e497d66f5981e7a1.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/img-433_jpg.rf.3e3f8c9689f1e9f3068c86c1c0295c8f.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0028334.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_008280.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0204935.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_007484.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/G0089362.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_006411.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0101486.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0066888.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_008721.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/United_States_003661.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0089827.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-1164_jpg.rf.d01ca0788b9b91e370020e61caf6bc43.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011983.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_002902.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0016232.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_003859.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/img-74_jpg.rf.bbb7822c260ad0c8f9f4e361c534329c.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_005260.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0066589.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0031370.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_004461.jpg,Beach Road MVP,17.747000,83.354000,Small
+valid/images/img-55_jpg.rf.9b5123ba7fa919ae64fc02d6597bb845.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/Japan_009697.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_009174.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0287651.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0028547.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-1100_jpg.rf.eb7c8a2834fb3c349144738e05806c16.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/img-40_jpg.rf.80b05d1760d1169f29d5fd2cf3120ae9.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-258_jpg.rf.e8fb0662316d1be8867dd41fbee5ddde.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0016690.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-182_jpg.rf.4a3748ca6898a245a5474d963734c12f.jpg,Anandapuram Junction,17.903300,83.362500,Large
+valid/images/G0011771.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/img-25_jpg.rf.06ba36f4b3e07cd7684b84722d00770a.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0028270.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-471_jpg.rf.fbadb2fbf6289251aa19248169f4b835.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/G0011863.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/img-1378_jpg.rf.1f80e4186406490cf12f1c6d70c4f889.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_006262.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_006239.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/India_000921.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0028198.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0064674.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/G0011948.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/G0028597.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0027801.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/India_004880.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/China_MotorBike_000755.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_002379.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_002946.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/India_003272.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_005343.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/India_001006.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0030139.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_003776.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0031660.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/img-227_jpg.rf.4e7fd2692cefbe4e52f4198d7f8e89ff.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011244.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_007121.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0052464.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_006103.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-1015_jpg.rf.909bdd1d71ace4c05a94db84dc93625d.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0105208.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_010769.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-497_jpg.rf.2c64d54e6604c392b9fc468079a62835.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+valid/images/G0011488.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/img-165_jpg.rf.a4b4be5d004a62f1bbf126232edb2785.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/China_Drone_000998.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_001919.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/China_MotorBike_001819.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-367_jpg.rf.299c5300a46524bfd3b2ae5e2a7398e8.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/img-348_jpg.rf.7f69a937375f8585653476522d546025.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0063493.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/img-479_jpg.rf.68af46ff65675c6673f7ab2b3ffffef5.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/img-107_jpg.rf.047c32191fcb8b9394b556bc28d86b17.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_001680.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0094454.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+valid/images/G0011616.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-466_jpg.rf.7048299d4afb9d58f9bdbb2ebc74ae85.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/G0067011.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-420_jpg.rf.3e311b9bdc9b3932e270f5402d4e4529.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0028932.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/India_005258.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-3_jpg.rf.64d155e488ceaac83020a728ca1f70d1.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/India_000628.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/India_003864.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+valid/images/img-89_jpg.rf.43e158edda9f92521ffc3510bcf51b21.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0064406.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Czech_002585.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0066263.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0052165.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0089515.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/China_Drone_000451.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_008223.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_001491.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0066592.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0064546.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/China_MotorBike_001607.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/img-80_jpg.rf.0589b7cb620ad10d89d24bfed103753a.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0089163.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_009129.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-1490_jpg.rf.6124903971ababd0f05b9c46bafb1d1c.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/India_006794.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0066980.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_000970.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0064431.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_001902.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/United_States_000062.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0067046.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Norway_004896.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0064826.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0027630.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-629_jpg.rf.fa98ba6e30797471aef7a9b74612cae4.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/Japan_000449.jpg,Kancharapalem Road,17.743000,83.245000,Small
+valid/images/G0011528.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/China_MotorBike_001084.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Japan_001524.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_007342.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/India_000127.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/G0011966.jpg,Anandapuram Junction,17.903300,83.362500,Large
+valid/images/G0011702.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0088815.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_003063.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/India_005285.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0257071.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0066597.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-635_jpg.rf.d927a354594cf6149884c5be3e1823b4.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Czech_000814.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-1038_jpg.rf.43044a9b145e56828cc8df20eda24317.jpg,Poorna Market Road,17.712500,83.305500,Medium
+valid/images/img-86_jpg.rf.d43a3c8ce39115f94e2a3704f88d52b1.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_007679.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/img-1181_jpg.rf.0eb219a5f79af78767ab6288d2f19561.jpg,Beach Road MVP,17.747000,83.354000,Large
+valid/images/G0011570.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0065252.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/United_States_002719.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0028506.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-1084_jpg.rf.52098039faa7681bd43039e8087fe59e.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_012943.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_003029.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0088802.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/India_000466.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0144760.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_009226.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_002048.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/China_MotorBike_001437.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/img-1192_jpg.rf.84f069433d07cd7b7dffc0324f4c7354.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/India_007418.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_001989.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/img-480_jpg.rf.5878d6196e07fb3c99a93ed5dfe3f272.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0090166.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-650_jpg.rf.e88805e59a7f1cc913add78a3fbc5021.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0027992.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0064487.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0064499.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/India_001465.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0028640.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_006382.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Czech_001940.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_000652.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0027849.jpg,Seethammadhara Road,17.743000,83.323000,Large
+valid/images/G0011940.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0029980.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-98_jpg.rf.667209472947ff4d519f65c6e206a7c3.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_005117.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/India_003274.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/G0011529.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+valid/images/G0011562.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Czech_000612.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/India_003731.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0066581.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-1198_jpg.rf.2ea37c0253559bbc06f293bed46a6a88.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-797_jpg.rf.6993be270266b6ae78459f48038d9249.jpg,Siripuram Junction,17.713000,83.320000,Small
+valid/images/img-137_jpg.rf.dbbf8edbc69e8ec999604def8f8a105b.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_007074.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0064014.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_006377.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0066261.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0105206.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_001921.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0016157.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_006322.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_005500.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_007974.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/Japan_007787.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_013003.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0027287.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+valid/images/img-82_jpg.rf.2e225a811dd15ab20c9c925ebf783e40.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_011213.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/United_States_001930.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/United_States_001813.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/India_002818.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_006889.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0027409.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0052147.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Czech_001437.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/Japan_005628.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_004338.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0052779.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_009033.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_001689.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_004626.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0064578.jpg,Kancharapalem Road,17.743000,83.245000,Small
+valid/images/img-16_jpg.rf.e2bc65f5efa27e24a5adfa74d5c5d964.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0064526.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_002665.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0027716.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_003199.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0214994.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_006029.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0064610.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0029783.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/img-2_jpg.rf.870067ad07f179da5f861c71fc9c2018.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/Japan_011312.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/G0011875.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-280_jpg.rf.53dd1da4cff0af87558cff72138794e9.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-1125_jpg.rf.86ace3086a16d1ce6ccf69ba9302d270.jpg,Siripuram Junction,17.713000,83.320000,Small
+valid/images/G0011612.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Norway_006441.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_009001.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0090298.jpg,Beach Road MVP,17.747000,83.354000,Small
+valid/images/img-98_jpg.rf.e08242c89fdddd9cbee3989892cecb56.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_008694.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_001725.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0052910.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/G0011705.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0032432.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/img-22_jpg.rf.3bbe99353a39e5a103b4b081e006fcdd.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_009663.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/G0011613.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0031612.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0052146.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0029452.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0064850.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/G0011952.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/G0011864.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Norway_003267.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0030101.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_006367.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0027720.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0028818.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-822_jpg.rf.7582e5a13b5cf440ae9397e311ee440f.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0090315.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0064073.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0064432.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_009520.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_007716.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_005559.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_010054.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/img-26_jpg.rf.31c8bef0b0068f28c70bb73ee6a30acc.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0067083.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_007003.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/img-384_jpg.rf.52f9bf925832084c3778e4d0de4dfb56.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/United_States_001889.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0064447.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/img-56_jpg.rf.e8d14f918b536a69a1350754361fb1b0.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/India_006760.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/G0032337.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0064738.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0016075.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_006946.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0066608.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0066630.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-302_jpg.rf.c7375ad32e8d0337bd7d27034f3764eb.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-300_jpg.rf.6b7b035dff1cda092ce3dc22be8d0135.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_005138.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_008925.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/India_002305.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-158_jpg.rf.80110529bda206547f2c5482abfca272.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-212_jpg.rf.5f7dc0f25419dc8a67116ce313c83707.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0066422.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/img-1018_jpg.rf.cce33b04104628bed279d72d43105f24.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/Japan_000383.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-100_jpg.rf.233751cac3399aa80b5e58a2afbb753a.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/img-1371_jpg.rf.11894881d76978ebf58c4229a282a61f.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0064147.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Norway_000994.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0095121.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_000336.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/G0089302.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-1046_jpg.rf.3ae09b70ef2d0afe29358204fed27378.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/United_States_000882.jpg,Railway Station Road,17.735000,83.305000,Medium
+valid/images/G0011989.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_009810.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/Japan_007899.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0449111.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/India_004320.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_000209.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_012987.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Czech_001277.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-233_jpg.rf.95f53597d4cd6932e86dce9fdbcc54c9.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_005423.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/G0066694.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0065300.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_006114.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_002962.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0225238.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_005099.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_000831.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0064657.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_003594.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0028546.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Norway_001429.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0020209.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011523.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/India_008988.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/G0074098.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0028305.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_000090.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_008012.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/Japan_006243.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-156_jpg.rf.ff820d5c1ff5fc1a1fc27fa5647cc146.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011614.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_010420.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/img-1092_jpg.rf.048a7a6f9d65e5e06ffd069e5b276a4d.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_008749.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0032515.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0028336.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0089865.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0030289.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_008105.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/India_000288.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_009436.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_007604.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0051941.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_012556.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G9028413.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0028490.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_007175.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/United_States_004712.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/G0020258.jpg,Beach Road MVP,17.747000,83.354000,Medium
+valid/images/img-8_jpg.rf.2fd2afeaa95f1b5e03478a8ef7573a87.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/img-1194_jpg.rf.66344c477fddc3549eb7d4132c0070a7.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_009013.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Czech_002420.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0029967.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/India_006603.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/China_MotorBike_000552.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-270_jpg.rf.ae32377ec34641192544670bf004739e.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/G0011712.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_009279.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/China_MotorBike_001370.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+valid/images/G0011506.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_002498.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0032217.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/G0011767.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0016315.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/img-927_jpg.rf.01288a255ca8b247ba4a6e9cdbfc4019.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_012915.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0052690.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_008128.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0041191.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0063846.jpg,Beach Road MVP,17.747000,83.354000,Small
+valid/images/G0011635.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0052119.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0028279.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_008287.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0064605.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/img-1175_jpg.rf.7a1be7a7c3b12ea2daad547debeda8de.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_002554.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_007232.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0031658.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-303_jpg.rf.4028fa8598017851778a5944165a953f.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/India_009397.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Norway_005727.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/China_MotorBike_000010.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/United_States_003348.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/China_MotorBike_000781.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-268_jpg.rf.08736c012f711f24b023c914e4205149.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_011542.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_010375.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0031591.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_012390.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/India_009213.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0016106.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Czech_001258.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/Czech_000454.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/img-597_jpg.rf.4ed3cb021048833cff70c9a21abfece2.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011980.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_002446.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0029312.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_003102.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0026518.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_006608.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_001649.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_007105.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0032517.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/China_MotorBike_001735.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_008639.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/India_004887.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+valid/images/img-92_jpg.rf.d582dc7867c53edcd46405da0df1f470.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_005266.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-1407_jpg.rf.2bfa96bbf13d5d885a5aee9d4006a1d3.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Norway_007540.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_001783.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-909_jpg.rf.76fb0c5b42ee25193c5b2387f0d6ffa4.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/United_States_001083.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_004623.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0031945.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_004195.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/India_004342.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_003018.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-275_jpg.rf.59c68c48a12960c7ea86163d39f0ea4d.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_002678.jpg,MVP Colony Road,17.748000,83.338000,Medium
+valid/images/G0011840.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0214995.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/United_States_002352.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/China_MotorBike_001300.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Japan_000341.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0134507.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/Norway_005920.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Norway_003504.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/img-0_jpg.rf.fbaa09010ac271c01bf95899a13c5149.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-262_jpg.rf.3db190e680343ed338296042b9f5e3a4.jpg,Railway Station Road,17.735000,83.305000,Medium
+valid/images/G0011970.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0089753.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/G0065615.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Norway_000903.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_008092.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0028598.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_006473.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_012062.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_006468.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_008639.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0111596.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0028282.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_010290.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/img-485_jpg.rf.7b6a34e38d89caf1f8d97f24298e67b2.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Czech_001240.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_010571.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_005622.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_009691.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0032034.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+valid/images/G0011559.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0027230.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0064446.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-361_jpg.rf.be4588f913f1e787f897058202e2b1c6.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0028288.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0028303.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0066570.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/img-1190_jpg.rf.a7aab00114125502972225ac2cc10187.jpg,Beach Road MVP,17.747000,83.354000,Large
+valid/images/G0011988.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_009737.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0089242.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0031215.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/img-1274_jpg.rf.a52fb449f170631a1fd8e46891ec9583.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0040983.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/img-1031_jpg.rf.c26326b88df81fcdf894987d6b818ecd.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0089516.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/India_002854.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_010287.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_009832.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Japan_001166.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Norway_007342.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0225129.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0027975.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/img-1115_jpg.rf.b00943217c920c71d133aea128ad9bf2.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_012996.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011662.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_008950.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_000103.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+valid/images/img-125_jpg.rf.d02a4493de4f918616bb8d92c5848c8d.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0024294.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0025389.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0094461.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_003660.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/img-6_jpg.rf.b23f3428b5a7b3af2e75d66c83d7f302.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_006169.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_002133.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0066395.jpg,MVP Colony Road,17.748000,83.338000,Large
+valid/images/img-68_jpg.rf.e378c31baca211ea6823c3fba0251a5c.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0064428.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_003186.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0052913.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Norway_006338.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/G0011647.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0029454.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/Czech_003564.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0028887.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/India_004161.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/img-503_jpg.rf.78dc49524b5d013c7c3580e2f88ee8e1.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Japan_012404.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-322_jpg.rf.9fd7d306b3ecd5ae42cdff1b02b0db99.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0010116.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_003778.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0089108.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/China_Drone_001714.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/G0011684.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/img-307_jpg.rf.65a7065124972969c3efbbca04122668.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_002119.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0090568.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0043165.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_008969.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0064525.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0028395.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/img-94_jpg.rf.26ce6c0878886e2b49b0191cf4f952bb.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Japan_000302.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0064538.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/G0011556.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0010815.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/United_States_003269.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_002260.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_007785.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/img-130_jpg.rf.b82150559b44fc5ce3e062cad83338ca.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-594_jpg.rf.3d9a20acdc1aea9ccb25d694f7cdbbec.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0036004.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0031402.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0052584.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+valid/images/G0011774.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+valid/images/G0011880.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0064545.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_008728.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Japan_008149.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+valid/images/G0011587.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/img-443_jpg.rf.7922db00bc35543191b2b6f3a5e307b1.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_000335.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0114817.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0225125.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/G0011766.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_006272.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0114703.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-1356_jpg.rf.68a6efc0aa8155515d176a724ce76de6.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Czech_001948.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_001117.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011936.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0090388.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/Japan_007635.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+valid/images/img-158_jpg.rf.69910b385c47356ae1ae2c964ea3356e.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0032300.jpg,Beach Road MVP,17.747000,83.354000,Small
+valid/images/G0011586.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_001049.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0028543.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011861.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/img-17_jpg.rf.66c2a0fce4e0de3bf1d6d6c6101b1d2e.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Czech_001025.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011590.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0066262.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/img-1094_jpg.rf.70097939ae70cdc1a0f63fc0aaf86663.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_000831.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/China_Drone_001628.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Japan_003255.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/United_States_002423.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/India_006524.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_003585.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0088812.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/India_009329.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/G0052003.jpg,Siripuram Junction,17.713000,83.320000,Small
+valid/images/img-38_jpg.rf.bded99397caea7ad2da343a336f8373d.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Czech_002980.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0066027.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_000485.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_010940.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_006851.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-9_jpg.rf.de0e0920eee97f99bfa4d5a2ed29d82e.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/G0028434.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0066362.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/India_002020.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0065281.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/China_Drone_000764.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0043225.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_006167.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_009526.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0063919.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0064184.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_006632.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0052966.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0225236.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_002133.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/United_States_001407.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Japan_000949.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_000701.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_008514.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0066252.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Czech_000010.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0064524.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0066416.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0348188.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_007299.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_004029.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_004184.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0065284.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_000040.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0064426.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/img-1323_jpg.rf.403e8959fb55402ad93f4c1d47f94306.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/G0011762.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0089837.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/G0011978.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_012739.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/India_001673.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0064999.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011524.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/img-665_jpg.rf.f1b7ae957b1b1d8c1da0a36309e1f6e2.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-327_jpg.rf.42714a663bc342d0dc175ebab152356d.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0029724.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Norway_003399.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/G0088799.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+valid/images/G0011982.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0225131.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/img-1204_jpg.rf.35bec6f82533a93a7b16f3f153b6c033.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/G0011761.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_002200.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0067007.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_000367.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-1288_jpg.rf.a1345ea25a6af4186c5c6acd4956cfd3.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-283_jpg.rf.b8c7a6ea440f9683c3f76d5754599a4f.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_003939.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_007503.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_009929.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_006160.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/China_Drone_002189.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/China_MotorBike_001019.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_007420.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0028504.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_008233.jpg,Poorna Market Road,17.712500,83.305500,Small
+valid/images/img-113_jpg.rf.41e0de0b5313848d0c1aab8352295efe.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+valid/images/G0011594.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/img-155_jpg.rf.1f2504bf50751764a9869bda1b9ff446.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_006702.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/Japan_000650.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_002836.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0064470.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/img-143_jpg.rf.65950d07c957712d5634cde1b748c152.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Japan_006384.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/img-79_jpg.rf.00fb662d8b19ea40165f6597578c18db.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_008475.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_009479.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/Norway_001825.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_006494.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/China_MotorBike_000648.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_010714.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/China_MotorBike_000064.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0010117.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/India_005510.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0089164.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0348190.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0066652.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/G0088818.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0040987.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-1404_jpg.rf.a17f09a42cb4b59ba8992ffa6ab594de.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0028195.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-362_jpg.rf.6363ec1a7603671afb1887d9f16c03e7.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_001737.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_005191.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/G0028717.jpg,Pedagantyada Road,17.664000,83.206000,Small
+valid/images/img-62_jpg.rf.a976672fa5c09b670891f68a2cff2cbe.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Japan_008204.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_000174.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/India_001925.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Norway_005693.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_011207.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_003172.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/Japan_006544.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_011279.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+valid/images/img-44_jpg.rf.9da4628a2b9a4d88c6d914fee9967987.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_008789.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_006787.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_005780.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_005034.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-33_jpg.rf.7132ce71f05e8f5ea94737f069801a58.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_009506.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_000537.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_008698.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_008944.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Czech_002954.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/G0051939.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/Japan_003610.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_004028.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_004459.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_002098.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-59_jpg.rf.5b0be5064b3641271cd16f2fc35f840f.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0016605.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0064971.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/img-122_jpg.rf.90260f1c979ae127d37bb26cf5d1b3cf.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-149_jpg.rf.44eff0efcbd1ccfa08da8768642f71c9.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/G0011701.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/img-131_jpg.rf.efdc6fe38a9d6b48e4a981e0417906a2.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_002995.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0040508.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0029965.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0029302.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/Norway_001488.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0010126.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/G0011591.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/img-603_jpg.rf.e1f5bc76f3b1f37d4436652525cd776f.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_009252.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+valid/images/img-97_jpg.rf.15b269d5004c07bc72c995d6e0b85f99.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/img-555_jpg.rf.dba58c9ee204b9fe294a6b780157c109.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/Japan_003389.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-41_jpg.rf.576ba21bc1fe67687dec58b7396ee09a.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_005241.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_004655.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0067001.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0027222.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_007250.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_004959.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_005044.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/G0011764.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_004835.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/img-1017_jpg.rf.055c9574db69b425079e0274a645b7c6.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-457_jpg.rf.ec4d7fc537d7170691c3c677bddc1ff4.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/img-67_jpg.rf.3b76fa614eb2355cf66a93f704545736.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_011248.jpg,Poorna Market Road,17.712500,83.305500,Medium
+valid/images/G0011475.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_008661.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+valid/images/G0011495.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_004797.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_008971.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/China_Drone_001805.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_008250.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+valid/images/img-133_jpg.rf.e7ee44b8eccc926e7c001689e2b47edd.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-1413_jpg.rf.767d5426c956e70b69d22933e1b6414f.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Japan_012019.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_004060.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0027225.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_009637.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_000165.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_008802.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/India_001842.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/img-147_jpg.rf.07e230d7e3d3604d8d170d313ee9d3db.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/G0011558.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Norway_001770.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0089859.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/Japan_000566.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Norway_001255.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0030859.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0214972.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/United_States_001750.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0040979.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0088772.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-352_jpg.rf.7071e9840456e2ef41927696dddb3a5a.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_006227.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_006326.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_007529.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/China_MotorBike_000210.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/Czech_002428.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_004928.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/img-150_jpg.rf.a63eedafde02e42081f5ebe5919a0975.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_006293.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/China_Drone_000160.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/img-636_jpg.rf.a6173bddbf7d20589954172debd64256.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0459766.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/img-317_jpg.rf.770d0c5b7340eea3208d88b0800066da.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_007204.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/G0052006.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0074084.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_007672.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0066109.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+valid/images/G0011493.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_005604.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Czech_001284.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0089928.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_008227.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011841.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_000746.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-380_jpg.rf.0211b9d66b12bdee8d05b9ba890573dc.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0028416.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0064577.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_005519.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_003214.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/United_States_003021.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0052780.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0063500.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/G0011195.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/Japan_012785.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0064588.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0052010.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/India_009765.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_004107.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0032033.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0064628.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0077750.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_001552.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0064566.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0064532.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-1208_jpg.rf.5a6ea18be48a61963ff7f856fc55998a.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/G0064259.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0090163.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/img-424_jpg.rf.5178a699e9c56cf7ba61ede4751b6696.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_002063.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_007080.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_002010.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/img-70_jpg.rf.12ce6fee2060057ff75f4cb79ade1d53.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_008499.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/G0011939.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_009392.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-89_jpg.rf.4cc9eb15fe4de48faa685770d8299408.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/img-363_jpg.rf.c15cba9de3e14fd6aa8724bcf942b27d.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_008004.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/Japan_005193.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_005515.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-1485_jpg.rf.2b1eaac0c9b83364889be7ec95ee96f6.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-398_jpg.rf.0c484369fdb23fdec1b9250477fc5d1d.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/United_States_004472.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/India_002428.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_007356.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0090380.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0027281.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_003512.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/China_MotorBike_001661.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/img-1264_jpg.rf.a3ffab0173c17582236c63e43c99dfea.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/img-904_jpg.rf.8317709d05aac94dac2fd4087f58f6cc.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Czech_002866.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/Norway_004884.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/China_MotorBike_001590.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_006755.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0028952.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/G0011947.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0090208.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_000261.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_010826.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0064617.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/India_001181.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-837_jpg.rf.6546c086c2b35e39bc1e27832cd9c020.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_012276.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/G0011492.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_003722.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+valid/images/img-128_jpg.rf.687de82b9d2e6b999c0b28608f54f4ef.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-318_jpg.rf.3cdda5b6cffa77075c11b9bdfd8cf26f.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_003100.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/China_MotorBike_000195.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/India_008013.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_006509.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0335493.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0052145.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0089240.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+valid/images/img-53_jpg.rf.d029c1fce662313d96da9cf18857f9ea.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/G0011871.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0028492.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_003745.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/China_MotorBike_001419.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_008599.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_005289.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/Czech_002612.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/India_005550.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0065305.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0124451.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/G0011801.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_011138.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/India_008948.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Norway_005195.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_000654.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-644_jpg.rf.c846835a4c152cbd22581385edfc421a.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Japan_009207.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_000997.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0065301.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0041487.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_001234.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0026517.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0151834.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-463_jpg.rf.1873f1b5bff6ed336b03ff3dfabb69e4.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/G0257072.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/img-161_jpg.rf.11a2bbe3c4fa2f48e02a2ffa07dc1022.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/India_001697.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0016328.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0028814.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_001552.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_001320.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/India_000043.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/G0064410.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0028935.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_006327.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-1070_jpg.rf.1a081c6c8f339f70552472eff5dd12d8.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0031373.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/img-135_jpg.rf.5f0fb06ed79bee89c8378fc74adf59ec.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Japan_011353.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+valid/images/G0011601.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_002735.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/img-1067_jpg.rf.7d11cdaba71476ef943675eb369fbe95.jpg,Sabbavaram Road,17.822000,83.103000,Large
+valid/images/G0011609.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/G0214948.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_005289.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0089831.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Czech_002092.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0090223.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-1142_jpg.rf.5238f0686939df7ba06d74524db0ab2e.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_001262.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-413_jpg.rf.a81aa42a7782099f9921156e3161a2a9.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_003646.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Czech_002436.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Norway_007551.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_008007.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0066574.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-462_jpg.rf.dc1cdd58947aa0f7d172ad76e4834de7.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_005016.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_008750.jpg,Kancharapalem Road,17.743000,83.245000,Small
+valid/images/G0011648.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0095119.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0028394.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0428810.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_013112.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_000402.jpg,Anandapuram Junction,17.903300,83.362500,Large
+valid/images/img-29_jpg.rf.779302644f1483e29b4d9860c12a025a.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0066600.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/G0011505.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/G0011637.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_000399.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0030141.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/G0011876.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_002968.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0031362.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_009890.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0066561.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0089929.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_005611.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_004958.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-86_jpg.rf.dbe8b3ed795b7a898d4fd37b08227003.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/img-1179_jpg.rf.eee03b1660dcfe3df511f4edb2100f16.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/G0011588.jpg,Pedagantyada Road,17.664000,83.206000,Large
+valid/images/img-134_jpg.rf.a93ec6ca575e345c2c4beee3b8c19d9d.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/img-1217_jpg.rf.2fca5285d4db295585fcb8b219ea0e86.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_000935.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/img-1462_jpg.rf.6b05551188c78b766e1a2149f1a6d6ac.jpg,Sabbavaram Road,17.822000,83.103000,Large
+valid/images/img-4_jpg.rf.3f76fbadac573c46f09cbe1e5ad9cbd1.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_006469.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_004290.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-1035_jpg.rf.4c7ecd7d2d8365a6effabf036099961a.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_002227.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_010069.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_007213.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/China_MotorBike_001001.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/India_008673.jpg,Siripuram Junction,17.713000,83.320000,Medium
+valid/images/G0011663.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0030194.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_000800.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0028893.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Japan_006675.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0090301.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_001087.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-197_jpg.rf.f9b2583df29a86d60bcfe3eea1dab4e9.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_009122.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Norway_001668.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_006466.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0041188.jpg,Venkojipalem Road,17.750000,83.327000,Large
+valid/images/G0011242.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_001859.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/img-35_jpg.rf.ceaad4737a26ec4369bb1a2fb0a20690.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_009147.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/Japan_009535.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/G0134474.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0365564.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0027228.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_009776.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/United_States_002921.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_007001.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0026954.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0028411.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0074187.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_004512.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+valid/images/img-58_jpg.rf.296769020f64b0779925b3759ecc203c.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0066621.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/img-130_jpg.rf.88e7b3a602b188375374a87d0ce9a438.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_006305.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_004482.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Japan_010533.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/Norway_000347.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/G0011971.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_003903.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0029088.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0089754.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Czech_002244.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_007090.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+valid/images/G0011845.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_004197.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_002070.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_002451.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_002498.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_001388.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/United_States_003634.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_010191.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_001247.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0088747.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/G0029511.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0064755.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_009813.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/India_002925.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_000781.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/China_MotorBike_001044.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0032335.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0066964.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_009281.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0027694.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0067077.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_008935.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Norway_006762.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_000948.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011615.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/China_Drone_002245.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/China_MotorBike_001572.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/Japan_004355.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_008762.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_009830.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_012280.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_000301.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+valid/images/G0011878.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/Japan_010402.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_008034.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_012108.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0114949.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0215021.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_001254.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-52_jpg.rf.f95bed5b5d7b75aca48be59a17751be5.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0036002.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/img-614_jpg.rf.727f9c1d1159709fea21d916f1a85d66.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0027890.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_002685.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-191_jpg.rf.e82152e059f62a6559daedf1d1ae62a3.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/United_States_002534.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/img-156_jpg.rf.7de75186c4dfad8e1880d129b8a9126f.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_008465.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_008029.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0041417.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_000081.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+valid/images/G0011700.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_008636.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0012022.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_010806.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-120_jpg.rf.bc6b90a7439c1ed48339336ca52eda8c.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/Japan_007959.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_007324.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Japan_012991.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/United_States_004318.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/India_002673.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_003806.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_006052.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_007994.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_005900.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Japan_012704.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/India_006201.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-1289_jpg.rf.ee31b55ab36b6d270e2023456e25858c.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_009735.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0027853.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0090222.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/Czech_003570.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0027718.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/India_003975.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0066566.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_010388.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0101514.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_008134.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/China_MotorBike_000004.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/India_009586.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011870.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-1410_jpg.rf.ff5914f88f7475b754e6d3733a54bdfe.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-228_jpg.rf.8170bf0af3eda9eb2c07bca7884a06a5.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_002250.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/img-10_jpg.rf.0e820e351aa26f462ee97c824308e98d.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_002357.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_003422.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0030528.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/Japan_013062.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0145143.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/China_MotorBike_000902.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0064857.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0040662.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0064103.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/img-65_jpg.rf.9e22afc3c2cf318239352e43a97a7241.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/India_000173.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_008505.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0052190.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/India_008523.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_004624.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0028751.jpg,Pedagantyada Road,17.664000,83.206000,Small
+valid/images/G0011951.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/China_Drone_001340.jpg,MVP Colony Road,17.748000,83.338000,Large
+valid/images/G0011872.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0064858.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_001821.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/img-34_jpg.rf.5321a336eea102d046897b374fe7c4ce.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0028267.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0064709.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+valid/images/img-124_jpg.rf.ed5673227f6900036f873ff3307dcab2.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0090200.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0204934.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0052993.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0066925.jpg,Siripuram Junction,17.713000,83.320000,Large
+valid/images/G0011476.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0020213.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_007750.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/China_MotorBike_001815.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Czech_002248.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0088140.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_004066.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_001708.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-476_jpg.rf.b7bf5047096c34127a33e35decef5680.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-7_jpg.rf.9eb7df0def00c9b67f311458e677ea64.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/img-1478_jpg.rf.69cfa6e495ebcfb631056b517b9ad9d7.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_002901.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0064440.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-114_jpg.rf.b58901654a45a559a41ffaa25f1bf741.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_002429.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-1123_jpg.rf.4ad03500548db09003f8b41585015492.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_004362.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-938_jpg.rf.922fb1c0a422d8025fa8034df3fdfb6c.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_005130.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/United_States_000579.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011985.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/United_States_001477.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0054293.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/img-1036_jpg.rf.c6d563a25851637557c41de931581fc9.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_005938.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Norway_007637.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0064822.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+valid/images/G0011563.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_006847.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011507.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/img-132_jpg.rf.b50598eb1f2ec30f7fa20ec420ef15a9.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Norway_008053.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_003684.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0028899.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0010037.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0029212.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0036010.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_012517.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0064852.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/United_States_001400.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_004908.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_007592.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011569.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_006439.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/img-1129_jpg.rf.90f82a461ff99093a22a1de86bfe132f.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0029722.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_000979.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Norway_000550.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/img-404_jpg.rf.be12da25b2c38b58291a3a7fe817ef57.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_010632.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_000085.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_001550.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/China_MotorBike_001452.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/India_008860.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_012691.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_004256.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0064539.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_007723.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/img-499_jpg.rf.8cbc7c8dba292bbadcc34ce63112514c.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-426_jpg.rf.18bab6ba48f960ed751cb35d1f628523.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-181_jpg.rf.27e6333bebd7c84f8b89871c21b1608b.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Norway_003780.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_008951.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+valid/images/G0011572.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_011784.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_005245.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0032229.jpg,Poorna Market Road,17.712500,83.305500,Small
+valid/images/G0011641.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_001668.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0088598.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0043288.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0066881.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_007506.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-256_jpg.rf.c762541217b28d3470b203beabf29bf7.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/G0011953.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/India_004176.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0029320.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_010932.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0215074.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0052192.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_000958.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-1374_jpg.rf.ce96edc20751341e155394a4e96204d7.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0066878.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/G0027851.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-73_jpg.rf.b63f566c3ddb5514f3fc2a1dd9ba40ec.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/img-12_jpg.rf.c157c559f2b0f2d374e9ce0efceabba1.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_002679.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0044265.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/India_001186.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_001154.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_007962.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_007168.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_006275.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_008298.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_003975.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_002154.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0064528.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0064627.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_000644.jpg,MVP Colony Road,17.748000,83.338000,Medium
+valid/images/img-159_jpg.rf.cebbb007cb512ee03704c25aef1a55b8.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+valid/images/img-149_jpg.rf.106bc8ad52b2a4e9b2a3a0bf5d824fa4.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/Norway_005628.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/G0011838.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0027799.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0065250.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/Japan_001409.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_008433.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0090209.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/China_MotorBike_000567.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/img-112_jpg.rf.5a07ba79fb5b9324ab9552dac363f633.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_004179.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/G0016688.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-351_jpg.rf.123b3f4e806dcfb111186da693c996c9.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-139_jpg.rf.af2a2cdcef3c3e01d9ad30e9f058e93e.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_006274.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0027976.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0030138.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_008525.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+valid/images/G0011763.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_006518.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_010063.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Norway_004514.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-494_jpg.rf.93aaae7aa17f7a5e7c247cba12a1b73e.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/img-32_jpg.rf.cc64c85b050ec517d46c0d1ec84ecc91.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_011515.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/img-18_jpg.rf.7f2f769d77cbc65566d396dd99af041c.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/Japan_003051.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/India_003993.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0030661.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Norway_002752.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/India_000714.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_009954.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-514_jpg.rf.1420b37cfd4c94e8f691c667c989a5f4.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_009640.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/India_005294.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/India_002894.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Czech_003188.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0028519.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0089238.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/India_007642.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Czech_001054.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/Japan_003431.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/China_Drone_001531.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_011124.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_002410.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_008546.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0088826.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/United_States_004344.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/Japan_009730.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/India_005122.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_003120.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/India_002956.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_008632.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_004132.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/img-1059_jpg.rf.e45c88f4363f01353c7c83cf27ebc978.jpg,Poorna Market Road,17.712500,83.305500,Medium
+valid/images/G0011987.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_011875.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_008712.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/China_MotorBike_001307.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_007628.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-23_jpg.rf.e6aa0daf83e72ccbf1ea10eb6a6ab3bd.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/India_004832.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_001983.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0028852.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_006613.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_002563.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Norway_001765.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/India_000612.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0029453.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_003150.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0064868.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0064716.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/China_MotorBike_000407.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Japan_012399.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_002636.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0040664.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Japan_001867.jpg,Poorna Market Road,17.712500,83.305500,Small
+valid/images/G0011585.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+valid/images/G0011969.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0114702.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_004847.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/Japan_012543.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-553_jpg.rf.3d751837334ee73ff7a2450529875ff1.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011584.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_007331.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/India_000223.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0028920.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_010422.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0088796.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0066604.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/img-429_jpg.rf.388ca2fa7461b636f9a349bee8fcafbc.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0090340.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/India_008127.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/India_004133.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+valid/images/G0011759.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0053103.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-459_jpg.rf.d767fa292e69f79fbb81604f24209de2.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0029757.jpg,Siripuram Junction,17.713000,83.320000,Medium
+valid/images/img-101_jpg.rf.f2b523ae66c89b3576935bce8d6cff7f.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_004143.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0051942.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+valid/images/G0011950.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_006447.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-223_jpg.rf.5ffeb123361acc79233a82037e058c4c.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/G0029229.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0066421.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+valid/images/G0011833.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_006478.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0067063.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-411_jpg.rf.2ab24c809788d2adfb2a3425aee22112.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-439_jpg.rf.e2750e5ed7bfd8910e9addda51e0c6dd.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/img-642_jpg.rf.d948fea937b446e71e3c93417aad9211.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Norway_004333.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_008703.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/China_MotorBike_000296.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0010127.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_011494.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Norway_005708.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-965_jpg.rf.1e50e1e9cfb1659590788a80ca0db27e.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/Norway_001540.jpg,Siripuram Junction,17.713000,83.320000,Large
+valid/images/img-91_jpg.rf.338eb998d5a5df2fed89e76eacd3372e.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_008142.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+valid/images/G0011772.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0064824.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0029233.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/Japan_010753.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/India_007322.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011243.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/img-618_jpg.rf.cc7c6c35a47a453b2b1347c6525691bb.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0088775.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0073978.jpg,MVP Colony Road,17.748000,83.338000,Small
+valid/images/G0011949.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_007868.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/img-1266_jpg.rf.ec8c0bffd0eb173f0b24e20dfd197f2d.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/China_MotorBike_001913.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+valid/images/img-119_jpg.rf.617f04d032861867068fdedcffbc08c4.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0029195.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011703.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_001640.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/G0011941.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/img-122_jpg.rf.4077ac4d44b77c6b081ecfe072fdb7ed.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/Japan_010758.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Japan_003088.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Norway_005253.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-989_jpg.rf.d15366534ffb61d0777930dc7cfd403a.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_011067.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_004463.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_005412.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/G0011770.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0028260.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_007059.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_001647.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0043314.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/Japan_007614.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0028846.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Czech_001871.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Norway_000394.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_002591.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0064315.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Japan_000073.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_004100.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/Japan_009219.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_000718.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0028907.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/India_000802.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/China_MotorBike_000336.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0215002.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/img-1458_jpg.rf.9cdc9ec2b9a4d933f29e74736132459c.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_011288.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/India_005291.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-198_jpg.rf.0b1cb1e07fefe54965584465087f960a.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Norway_007121.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Norway_002453.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_003998.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Norway_003232.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_009138.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/img-145_jpg.rf.1226e39126db9f83d248fdd7916fbc8f.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/G0011937.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0029721.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_004657.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/G0028301.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/G0028714.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+valid/images/img-104_jpg.rf.b96781880df5be4533deb9aa122a5fa2.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0031401.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011773.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0010110.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-633_jpg.rf.3a6adcebf0215036565a568ea9d8a870.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_007404.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0028259.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0010128.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0114681.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_003884.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_001441.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+valid/images/G0011678.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Czech_001285.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0028398.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_001168.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/China_MotorBike_000328.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/China_MotorBike_000422.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_004209.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0016689.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-850_jpg.rf.f58a5fd33a77fc161873b212ca1c098d.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/India_007745.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/img-1247_jpg.rf.5f4d16e587a6ccdb2cf41fd5377b756c.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/G0010770.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/img-509_jpg.rf.5bcf3d06847c789c6ffddd4d68666c6e.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_000627.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/United_States_000696.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_002708.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_008157.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0032436.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/img-85_jpg.rf.17342f9270df36f0766a4299f28a9c97.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Japan_008404.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Norway_007231.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/img-136_jpg.rf.0c0523464a29bf9b5a56e952f8e44522.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/img-83_jpg.rf.12cd03f94225c1d9926699ee74a486d1.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_006345.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-622_jpg.rf.0de72c0dc080b1c68cc7573ef9e7d9aa.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_006103.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_006316.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0025405.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+valid/images/G0011973.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Norway_005618.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_005088.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_007922.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Japan_009257.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_005981.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0088830.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_002867.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0064825.jpg,Siripuram Junction,17.713000,83.320000,Large
+valid/images/G0011986.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_002593.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_002056.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_007042.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0287605.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+valid/images/G0011769.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_005717.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011564.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0027852.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0064520.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_006115.jpg,MVP Colony Road,17.748000,83.338000,Small
+valid/images/img-116_jpg.rf.145a504dc624b74d8f14f772fd52b454.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0016673.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/China_MotorBike_001578.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0052009.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0032221.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_008229.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0088798.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0214971.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/United_States_001316.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Czech_000103.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/G0043317.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/Czech_000341.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/China_MotorBike_001152.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/United_States_000207.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0064753.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Japan_007173.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0028514.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-34_jpg.rf.d9e0079bff5b554f1d9625689dd43075.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_002293.jpg,Kancharapalem Road,17.743000,83.245000,Large
+valid/images/G0011427.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-147_jpg.rf.fddcc7b6bec7550eb93fc7f4969e832e.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_004604.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-99_jpg.rf.e4e00fb5fb002d3813a2acb346473620.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0030320.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/India_007806.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0094483.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Norway_004040.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/G0011865.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/Japan_003004.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_010548.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Japan_006381.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_003475.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/United_States_001748.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_012724.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/Japan_005011.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0088824.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0063926.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0066562.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/China_MotorBike_000882.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_000853.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/G0032207.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_004837.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_002416.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0094450.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-1159_jpg.rf.336c791921aceab3c370eae2563ea675.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_008143.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0043050.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0016329.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0089826.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/India_005526.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0066953.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0089364.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0016080.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_004631.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0027662.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-101_jpg.rf.f213d98946c4f8858a5bf3200c89e39c.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/India_009268.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/Japan_004075.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/G0011573.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Japan_001108.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_006756.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/img-475_jpg.rf.826d8251183c671da741c6bbdbc63b7f.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+valid/images/img-37_jpg.rf.2cb183bf8edfb8a0b1011c60cb30018d.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0027897.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_008425.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+valid/images/img-121_jpg.rf.f10111c655c7e2f3ee83a4ad6c600cd8.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_001077.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_000357.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/United_States_003832.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_007052.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_003490.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+valid/images/G0011494.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Norway_006601.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_001900.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/img-127_jpg.rf.d571fa79b72b814f8c973be62a50aabc.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0025080.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_006098.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0066491.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_008649.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+valid/images/G0011592.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0064488.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0088599.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_011895.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_003222.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_001008.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/United_States_002262.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0067081.jpg,Seethammadhara Road,17.743000,83.323000,Large
+valid/images/G0011477.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_005445.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0028513.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/Japan_011959.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_005820.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0154848.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_002771.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_005047.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0094406.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_002579.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0064740.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-385_jpg.rf.3e1cef7e8251f4c7a1abbafd5ec599bc.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/img-1306_jpg.rf.20a0dc73006bc725d0674482be5945f4.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-123_jpg.rf.8ae4c2726246a3dea5d41f6ba3a64639.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0016501.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/G0064346.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Japan_001351.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_012465.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_010636.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/img-1336_jpg.rf.0510a2fcd323078068fba01f83f3520b.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0027220.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_004337.jpg,Seethammadhara Road,17.743000,83.323000,Large
+valid/images/G0011713.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_002340.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_000605.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_001007.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/G0029002.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0089161.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-1483_jpg.rf.995b4554e4c3dde6450aa416b1819cf8.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0104533.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/Japan_005857.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/United_States_002721.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0028764.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_001526.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Norway_006137.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-593_jpg.rf.9ecc7604e866912e7cddc0ea1c65d412.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-458_jpg.rf.72cb15a746ee92f6714f4ceed305738a.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0090232.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/India_004387.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0028302.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0031611.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_011767.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/img-1063_jpg.rf.808904a3811abd627fae8ec639da8126.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-592_jpg.rf.6187cc73be9786a0826c78f03b69e072.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/China_MotorBike_000266.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/Japan_005980.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Norway_002061.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/India_005995.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/G0011567.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/img-566_jpg.rf.04baef7f164a924d84511224f7b46b8a.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0066635.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011942.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+valid/images/G0011976.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/Japan_007351.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/China_Drone_000057.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_012226.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Norway_000369.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/India_006633.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+valid/images/G0011869.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0028409.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0066106.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0105204.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/G0011527.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/Norway_000100.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_009389.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0064441.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0029191.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0064407.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0043273.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/img-1311_jpg.rf.6ced004d427dd0c4f666f542e990625f.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/China_MotorBike_001038.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/G0066586.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/Norway_001666.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-628_jpg.rf.42b86eabd12459c1fcdde71b964b4513.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0016104.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_007720.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/G0011868.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/India_008099.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/Japan_005134.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_008390.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0040975.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Czech_002058.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_000963.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+valid/images/img-139_jpg.rf.c8563e13a80d72f3d49a5678a2a1b6ea.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/G0011196.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/img-807_jpg.rf.c747bdc3e0c7a1e83e31cbd5dc866919.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_008336.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/China_MotorBike_001139.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/img-226_jpg.rf.5f9874a019437b70987ae2aa665878b7.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/Japan_006861.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0028901.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0074113.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/India_003171.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0066967.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/img-548_jpg.rf.ba5c7c94f831b7c84f8e41d7d30530fc.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+valid/images/img-103_jpg.rf.03b85ba0c77ecb807164864114366680.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_003878.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_009381.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Norway_002706.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_003865.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/img-516_jpg.rf.d9bff40a3244096755225e1efa7dfeba.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_000448.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-581_jpg.rf.8c5c82afd59e6af22ff5a3e3c72aff1f.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/img-1338_jpg.rf.f0d42387e750fad65be0d793327ae143.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0088814.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0041796.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0088290.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/United_States_003724.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0074230.jpg,Pedagantyada Road,17.664000,83.206000,Large
+valid/images/img-162_jpg.rf.dcb9992c5ff6dfe9dabbeb16ea3fbccb.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_012309.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_007641.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_001542.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0027977.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_011427.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/Japan_007579.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0095125.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Norway_008030.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/United_States_000684.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Japan_012829.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/Japan_003917.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/India_009071.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_001757.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/img-311_jpg.rf.8454a25910a149341a92ab116f831936.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0031659.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+valid/images/G0011832.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/Czech_001114.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_004525.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0016604.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_002263.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Norway_007445.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0134627.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_001802.jpg,MVP Colony Road,17.748000,83.338000,Medium
+valid/images/img-28_jpg.rf.e8bca0af933774ad39dcb6b531fa0202.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+valid/images/G0011503.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/G0011974.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0064611.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/China_MotorBike_001073.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-49_jpg.rf.d01d16f6ca4e230e7b2e1e35f8288e02.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0064549 (1).jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_003690.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/img-331_jpg.rf.7e9a42665269c16ef3a3fde22dd626b9.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011589.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_003490.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0041488.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_011931.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_009139.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_009215.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Czech_002857.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/China_MotorBike_000357.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+valid/images/G0011642.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/China_MotorBike_001236.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/img-1016_jpg.rf.e78f46a3ec022d4eb1672e2648f151a3.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0028750.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011958.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_000580.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-234_jpg.rf.cf4a8f8c19d33c53f38d6a19b3dd054b.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_002411.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_005348.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_008640.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/G0065757.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_000352.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/Czech_000595.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/Japan_000081.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/China_Drone_000861.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-183_jpg.rf.4358b5ae9b05895a41d00d84a0e17ec7.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/img-117_jpg.rf.56a7e3b29e60b28e25b3f4a3c7817605.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-473_jpg.rf.a2116db1425fc5a7c35a863735f3be83.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-1093_jpg.rf.05a44664e33914b6788c530243928049.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0094484.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0398361.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0084390.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0027505.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0028596.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/India_004121.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_000655.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/Japan_000328.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0066613.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Norway_003363.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0066569.jpg,Anandapuram Junction,17.903300,83.362500,Small
+valid/images/G0011991.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0064715.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Norway_007163.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/China_MotorBike_000050.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/G0090246.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+valid/images/G0011677.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_003815.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0064000.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0040980.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_012625.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0052417.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0010132.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/India_001815.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+valid/images/G0011636.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_011088.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_007745.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/G0077749.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/G0073889.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0335488.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_004116.jpg,Venkojipalem Road,17.750000,83.327000,Small
+valid/images/G0011472.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0028410.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/India_004047.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/img-118_jpg.rf.75b7bf6e55f6d7b25f190d74200033c8.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+valid/images/img-118_jpg.rf.ffe266ade5f29dd5f8856c82694a9497.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0029328.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0063376.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/img-392_jpg.rf.a74441b6f7c2332e3e553548670a315b.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/India_000743.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Czech_000982.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_005040.jpg,Poorna Market Road,17.712500,83.305500,Medium
+valid/images/G0011800.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_000557.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/Japan_010963.jpg,Beach Road MVP,17.747000,83.354000,Large
+valid/images/G0011489.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0027231.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-260_jpg.rf.3acd135908f14f0e9f68192fa13ea465.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_000732.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/img-1110_jpg.rf.58f98b87bac9c11e78e62d372505d06f.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-432_jpg.rf.27188558d4a1d7b5c2075d64faf49977.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0025823.jpg,MVP Colony Road,17.748000,83.338000,Large
+valid/images/G0011561.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_001641.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_002623.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_001098.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+valid/images/img-164_jpg.rf.2cea1e3474122bd2e27974f3521e96c7.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_012583.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Large
+train/images/India_001167.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0084732.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Czech_002577.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+valid/images/G0011990.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0029603.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0031378.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/img-574_jpg.rf.bb4440939828e45cfc00da0f7231dde8.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/United_States_001897.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/img-336_jpg.rf.eeafb6921ceff278aa8e24afe9f78f8a.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0027283.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_002889.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0145139.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/India_002385.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/img-1101_jpg.rf.82e6925a4c63920b08e446e5915e2524.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/img-290_jpg.rf.6942266560522f82066038b541027d9d.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_008733.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0043315.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Czech_000108.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/G0011490.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_011854.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-1471_jpg.rf.0e43be92cf58d9626b9143ab0c358087.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_002420.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/India_008139.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0144757.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0064148.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_000942.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Czech_000881.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0028304.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_008446.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_010607.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0145141.jpg,Beach Road MVP,17.747000,83.354000,Medium
+valid/images/G0011603.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-415_jpg.rf.2285ec32b9bdc584221e193dc135e3fd.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/Japan_007357.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Norway_004236.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/Japan_002510.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Norway_002751.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+valid/images/G0011935.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/G0064145.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0016499.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/Japan_001972.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0028996.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+valid/images/G0011984.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0052401.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0027895.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_012521.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+train/images/G0028488.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/img-45_jpg.rf.e872f0163ffadc7f06542bdf9d17d8bb.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-344_jpg.rf.dd4eebb8836b8efe2a2cce77d61349b7.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/India_004485.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0028610.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/G0066634.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/China_MotorBike_000047.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0094403.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_007448.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_005669.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/G0287652.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0090339.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0029193.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0066576.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_007909.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0064540.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0088436.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_001036.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_011278.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Czech_000293.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/Japan_007148.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/img-1380_jpg.rf.d995f5333aac50b036bc09ac154f66f0.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-254_jpg.rf.91854d4eadf02cc3bee6f1b23aeea57a.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_003167.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/img-607_jpg.rf.72e1f367a8ef39c033eafac3b66f7ea4.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0024291.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/United_States_004261.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_002112.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/United_States_003114.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0028479.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/img-1305_jpg.rf.e766a37e629d7ff7b3d9f6cc683cdaae.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0089194.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_004721.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0089867.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0027712.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011775.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_008017.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0089520.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_001534.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_005653.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/Japan_011055.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/img-624_jpg.rf.502c75a86b1dad5430ad53cb148b40cd.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-63_jpg.rf.9aa76f7292d30d50dd111ad2e580b6fd.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+valid/images/img-71_jpg.rf.a66c7ead4152e3634f1d01604a09729f.jpg,Maddilapalem Junction,17.734100,83.318100,Large
+valid/images/G0011867.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0065794.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/Japan_001109.jpg,Siripuram Junction,17.713000,83.320000,Medium
+train/images/G0031377.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-274_jpg.rf.816b2e4bda9e51204bf2cd2aa209fe50.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_007648.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/United_States_004673.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/G0028615.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0032032.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+valid/images/G0011968.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/G0010034.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/img-578_jpg.rf.5debbb9d599b351e32b855f0a443b0a1.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_001649.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0016243.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/India_005421.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/G0031214.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0027931.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_008807.jpg,NH16 Near Madhurawada,17.870000,83.352000,Medium
+train/images/India_002154.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_012742.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_011141.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_007607.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0094485.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/img-267_jpg.rf.f50b4eccea93fe17ebcf2e4076140c88.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_003433.jpg,Siripuram Junction,17.713000,83.320000,Small
+valid/images/G0011595.jpg,Poorna Market Road,17.712500,83.305500,Small
+valid/images/G0011643.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/img-213_jpg.rf.5a46fcca214ab83b01c26743a9dc3e72.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0073888.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/img-1114_jpg.rf.551c37995c73477d91365d3d9079dfe7.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_007630.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+valid/images/G0011874.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_003911.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-831_jpg.rf.0888d8e410ad6187773c33bb391e873c.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/G0066919.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/India_008183.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/China_MotorBike_000518.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/G0088825.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0020212.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_012353.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0029528.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0030322.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011593.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0010115.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+valid/images/G0011474.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_009293.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/India_007972.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0041416.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/India_006450.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-373_jpg.rf.e9b2fc295556d6755edf71ca30fa2f42.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/China_MotorBike_000752.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/G0145165.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/Japan_003093.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_003912.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/img-100_jpg.rf.bea68f695da564dbc70c13ae40e10f07.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0066572.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Norway_007207.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Norway_006660.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/India_001105.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_006827.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/img-387_jpg.rf.fb14c6f21a50ad4a36957792a4c96792.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_003520.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_001906.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/India_006581.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011704.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/G0064508.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/India_007450.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0064725.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-148_jpg.rf.eddf84184c0a99958850113c36e7b754.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Japan_010507.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-1296_jpg.rf.7800f66ee465eb08f2770c1cd0029fce.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/G0066363.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0348135.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/Japan_005871.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/G0028997.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/img-374_jpg.rf.9ec3835feb04e376c4bc09ab1c1dde32.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_004701.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0064621.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/G0064582.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/G0020198.jpg,MVP Colony Road,17.748000,83.338000,Small
+valid/images/img-23_jpg.rf.df44d4895c369fb170cf0489ee5d3aaf.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/Japan_006996.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0052911.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_005987.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/Japan_002438.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/G0067036.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/img-305_jpg.rf.564405f2ae91fe75f3f54639e295f1e2.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_006845.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/China_MotorBike_000996.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0028300.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011566.jpg,Siripuram Junction,17.713000,83.320000,Medium
+valid/images/G0011981.jpg,Poorna Market Road,17.712500,83.305500,Large
+valid/images/G0011560.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_007002.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0027794.jpg,Beach Road MVP,17.747000,83.354000,Small
+valid/images/G0011768.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+valid/images/G0011881.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-96_jpg.rf.62cddedc415c7b5c50c459bce49adcc9.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_002393.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/India_009579.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/G0065039.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_008752.jpg,MVP Colony Road,17.748000,83.338000,Large
+train/images/G0028835.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_007749.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/G0051943.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/China_MotorBike_001537.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/India_009180.jpg,NH16 Near Yendada,17.845000,83.338000,Large
+train/images/India_006874.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/G0011491.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/img-487_jpg.rf.86a0a33407773411060aea00d0e25298.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/India_006967.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_005774.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0032755.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/India_001865.jpg,Poorna Market Road,17.712500,83.305500,Medium
+valid/images/G0011581.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/Japan_004175.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/India_005884.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/G0307784.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Norway_003079.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_000591.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/Japan_006287.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/G0066593.jpg,Pedagantyada Road,17.664000,83.206000,Small
+valid/images/G0011943.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0029085.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/Japan_001027.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Norway_000703.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_008667.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/Japan_004535.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/img-1364_jpg.rf.676e02d490c40a65e1552417e4f1107b.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_008093.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/img-1457_jpg.rf.fc1c9913812c641458d778451dfd4b38.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/India_002087.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+valid/images/G0011879.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/G0041017.jpg,Railway Station Road,17.735000,83.305000,Small
+valid/images/G0011526.jpg,Siripuram Junction,17.713000,83.320000,Small
+valid/images/G0011504.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/G0025824.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0115386.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+valid/images/img-88_jpg.rf.2b2c595565cf3e4a308cce72d8752c28.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/G0028284.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/Japan_007829.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Norway_001583.jpg,Kurmannapalem Road,17.689900,83.169300,Large
+train/images/Japan_012574.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/G0028258.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/Japan_000840.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/G0064523.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-188_jpg.rf.e25310df0413037e398729953a4e8240.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/India_003118.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/G0090265.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_013105.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+valid/images/G0011967.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/Japan_011226.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/img-634_jpg.rf.42d6e4ebdda859ab935130b75ae5808f.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/China_Drone_002190.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/G0064593.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+valid/images/G0011618.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/img-321_jpg.rf.663ad0ed3ef90b48f212d451aa82aba9.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0088293.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/India_002121.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/img-1109_jpg.rf.02baa6ec87adedf1fe64a353c14d392a.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_005936.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/India_006777.jpg,Beach Road Rushikonda,17.796900,83.384200,Medium
+train/images/G0089434.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/G0029449.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_006462.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/Japan_010945.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Norway_003032.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_004345.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-249_jpg.rf.9530479784ad79a1ede2b51e62c968b4.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/United_States_004549.jpg,Sabbavaram Road,17.822000,83.103000,Large
+valid/images/img-109_jpg.rf.09e666f514c1ef6fedd588a98fa3f7e4.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/India_001903.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0032220.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/img-1466_jpg.rf.523e75fa0739152f9a531690a8a9be8a.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0154847.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_007926.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/G0066085.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_003469.jpg,Railway Station Road,17.735000,83.305000,Large
+train/images/img-77_jpg.rf.34415fbad0c24da0e8f26f852895571b.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Japan_006393.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/Japan_011136.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Czech_001251.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0027310.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/img-664_jpg.rf.0392cc4f0a63d256e7c42f057345f8b5.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+train/images/G0089363.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/G0154849.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+valid/images/G0011473.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/India_007432.jpg,Pedagantyada Road,17.664000,83.206000,Small
+train/images/Japan_012615.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/India_002795.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/Japan_005313.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/img-1050_jpg.rf.505376c1800d52d02664236268015391.jpg,Sabbavaram Road,17.822000,83.103000,Large
+train/images/Japan_009454.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_000577.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0459640.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/United_States_001072.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/G0027233.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_006175.jpg,Maddilapalem Junction,17.734100,83.318100,Medium
+train/images/India_008034.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/img-220_jpg.rf.4ffdf8738ac89d5fccf5d1e08c169af8.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/G0031131.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0029261.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/G0051944.jpg,Beach Road RK Beach,17.713000,83.341000,Medium
+train/images/Japan_004121.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/G0051945.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/img-542_jpg.rf.77644450590746c96376f073e2160d29.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/img-1153_jpg.rf.9f055c36356eb05d18b88a8c1b530d6b.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/India_008070.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/India_007861.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/Norway_005238.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/India_004542.jpg,Seethammadhara Road,17.743000,83.323000,Small
+train/images/img-609_jpg.rf.e036fb262fec0db3c7c37622e7fcbcfd.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_004312.jpg,Venkojipalem Road,17.750000,83.327000,Large
+train/images/Japan_000295.jpg,Sabbavaram Road,17.822000,83.103000,Large
+valid/images/G0011873.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/G0052163.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_008163.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_006100.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/img-48_jpg.rf.80aab2de449196e47a920e6e3e1557ce.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+valid/images/G0011496.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_007362.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/Japan_011024.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/Japan_007971.jpg,Siripuram Junction,17.713000,83.320000,Large
+valid/images/G0011866.jpg,Poorna Market Road,17.712500,83.305500,Large
+valid/images/img-153_jpg.rf.6721de6b33bc9b6434aa338763b08f05.jpg,Beach Road RK Beach,17.713000,83.341000,Large
+train/images/G0028503.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/Japan_007873.jpg,Beach Road MVP,17.747000,83.354000,Small
+train/images/India_002079.jpg,Beach Road Rushikonda,17.796900,83.384200,Large
+valid/images/G0011664.jpg,Gajuwaka Junction,17.700400,83.216800,Medium
+train/images/img-584_jpg.rf.fc44d8fdba9c7b8af37faaa753133602.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/China_Drone_001511.jpg,Kancharapalem Road,17.743000,83.245000,Small
+valid/images/G0011760.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/img-449_jpg.rf.a88013566cf72d8e523b8517104983d1.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/India_006529.jpg,MVP Colony Road,17.748000,83.338000,Medium
+train/images/India_009667.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-525_jpg.rf.31bb542f59dd1c64d4af0952f14c76e3.jpg,Sabbavaram Road,17.822000,83.103000,Medium
+train/images/India_007712.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/Japan_001685.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/G0287607.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_005762.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Japan_010032.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large
+train/images/China_MotorBike_000402.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/img-885_jpg.rf.2d87f84691e94f15cfc13f37e886377e.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Medium
+train/images/G0010144.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_003704.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/G0064567.jpg,Poorna Market Road,17.712500,83.305500,Medium
+train/images/G0064631.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/India_009478.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Small
+train/images/G0088175.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_001749.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_005364.jpg,Gajuwaka Junction,17.700400,83.216800,Small
+train/images/Japan_000851.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+valid/images/G0011975.jpg,Kancharapalem Road,17.743000,83.245000,Large
+train/images/Japan_000187.jpg,Pedagantyada Road,17.664000,83.206000,Large
+train/images/G0020203.jpg,Seethammadhara Road,17.743000,83.323000,Medium
+train/images/Norway_003231.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/G0067043.jpg,Venkojipalem Road,17.750000,83.327000,Medium
+train/images/G0052166.jpg,Sabbavaram Road,17.822000,83.103000,Small
+valid/images/G0011602.jpg,Anandapuram Junction,17.903300,83.362500,Small
+train/images/img-623_jpg.rf.53d9491f77118c981d2204bc45323cf8.jpg,NH16 Near Madhurawada,17.870000,83.352000,Small
+train/images/India_009254.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+valid/images/G0011765.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+train/images/Czech_001956.jpg,Hanumanthawaka Junction,17.760900,83.318800,Small
+train/images/Japan_006506.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/Japan_012430.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Large
+train/images/India_005801.jpg,Railway Station Road,17.735000,83.305000,Medium
+train/images/G0067035.jpg,Siripuram Junction,17.713000,83.320000,Large
+train/images/Norway_001507.jpg,Poorna Market Road,17.712500,83.305500,Small
+train/images/img-573_jpg.rf.da9254336436b337c14edd7cb0bb7c39.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-1155_jpg.rf.928f943f791f9d88bee7d5a3f124ee85.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Large
+train/images/Japan_004481.jpg,Beach Road MVP,17.747000,83.354000,Large
+train/images/India_008933.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/Japan_005566.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/Japan_008921.jpg,Kurmannapalem Road,17.689900,83.169300,Medium
+train/images/Japan_002362.jpg,Kancharapalem Road,17.743000,83.245000,Small
+train/images/United_States_001362.jpg,Pedagantyada Road,17.664000,83.206000,Medium
+train/images/img-1237_jpg.rf.25f2bc82263578701d5affcfb3dc9514.jpg,Seethammadhara Road,17.743000,83.323000,Small
+valid/images/G0011621.jpg,MVP Colony Road,17.748000,83.338000,Large
+valid/images/G0011844.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/img-309_jpg.rf.e8b8a5e1969e8e71b448aa7c83206264.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/G0016330.jpg,Anandapuram Junction,17.903300,83.362500,Large
+train/images/Japan_012734.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/G0028603.jpg,NH16 Near Yendada,17.845000,83.338000,Small
+train/images/India_009782.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Medium
+train/images/G0016105.jpg,Hanumanthawaka Junction,17.760900,83.318800,Medium
+train/images/G0051938.jpg,Maddilapalem Junction,17.734100,83.318100,Small
+train/images/India_004612.jpg,Dwaraka Nagar Junction,17.726000,83.303000,Small
+train/images/Japan_004378.jpg,Railway Station Road,17.735000,83.305000,Small
+train/images/India_005757.jpg,Siripuram Junction,17.713000,83.320000,Small
+train/images/G0088619.jpg,Poorna Market Road,17.712500,83.305500,Large
+train/images/Japan_008645.jpg,Beach Road RK Beach,17.713000,83.341000,Small
+train/images/img-110_jpg.rf.0390f81a2c5b2ad5676a8eb5b043d743.jpg,Beach Road Lawson's Bay,17.730000,83.347000,Medium
+train/images/India_007271.jpg,Beach Road MVP,17.747000,83.354000,Medium
+train/images/Japan_000788.jpg,Beach Road Rushikonda,17.796900,83.384200,Small
+train/images/India_006031.jpg,Gajuwaka Junction,17.700400,83.216800,Large
+train/images/United_States_004398.jpg,Kurmannapalem Road,17.689900,83.169300,Small
+train/images/India_001230.jpg,Kancharapalem Road,17.743000,83.245000,Medium
+train/images/img-259_jpg.rf.86aaa968ce87cb21d2649e95839c244d.jpg,Pedagantyada Road,17.664000,83.206000,Small
+valid/images/G0011977.jpg,Seethammadhara Road,17.743000,83.323000,Large
+train/images/G0063928.jpg,MVP Colony Road,17.748000,83.338000,Small
+train/images/img-491_jpg.rf.b6979774778537b494872c0a743070d6.jpg,Venkojipalem Road,17.750000,83.327000,Small
+train/images/Japan_002873.jpg,Sabbavaram Road,17.822000,83.103000,Small
+train/images/India_004719.jpg,Anandapuram Junction,17.903300,83.362500,Medium
+train/images/G0030372.jpg,NH16 Near Madhurawada,17.870000,83.352000,Large
+train/images/img-469_jpg.rf.a0f424db1106cf40f7cbbf56698ab5ba.jpg,NH16 Near Yendada,17.845000,83.338000,Medium
+train/images/Japan_002453.jpg,NH16 Near Hanumanthawaka,17.820000,83.324000,Small
+valid/images/img-73_jpg.rf.4d0ebe8bd78382854887c85af26c88b0.jpg,Hanumanthawaka Junction,17.760900,83.318800,Large

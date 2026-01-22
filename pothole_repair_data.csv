@@ -1,0 +1,6 @@
+pothole_id,volume_cm3,severity,pothole_count,road_type,traffic_level,optimal_material,optimal_equipment,unskilled_labor,skilled_labor,supervisors,cost_per_m3_min,cost_per_m3_max,repair_time_hours
+1,2500,Small,1,urban,low,"Cold mix asphalt",Compactor,2,1,0,3500,4500,2.5
+2,8500,Medium,2,rural,medium,"Hot mix asphalt","Paver + Compactor",3,2,1,4200,5800,4.0
+3,15000,Large,1,highway,high,"Bitumen + Hot mix","Mechanical cutter + Paver",4,3,1,6500,8500,6.5
+4,1200,Small,3,urban,high,"Cold mix asphalt","Hand tools",3,1,0,3200,4200,1.8
+5,9500,Medium,1,rural,low,"Hot mix asphalt",Compactor,2,2,1,4100,5600,3.2

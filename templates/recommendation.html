@@ -1,0 +1,712 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+  :root{
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --ink: #0f172a;
+    --muted: #6b7280;
+    --line: #e5e7eb;
+    --blue: #2563eb;
+    --green: #10b981;
+    --orange: #f59e0b;
+    --red: #ef4444;
+    --soft: rgba(148,163,184,0.18);
+  }
+
+  .rec-wrap{ max-width: 1220px; margin: 0 auto; }
+  .rec-shell{
+    background: linear-gradient(135deg, #eaf2ff 0%, #ffffff 55%, #f4eaff 100%);
+    border-radius: 22px;
+    padding: 18px 18px 22px;
+    border: 1px solid rgba(148,163,184,0.25);
+    box-shadow: 0 18px 45px rgba(148,163,184,0.22);
+  }
+
+  .rec-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .tabs{ display:flex; gap:10px; flex-wrap: wrap; }
+  .tab-btn{
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--muted);
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .tab-btn.active{
+    border-color: rgba(239,68,68,0.55);
+    color: #b91c1c;
+    background: rgba(239,68,68,0.06);
+  }
+
+  .title{
+    text-align:center;
+    margin: 6px 0 2px;
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--ink);
+    letter-spacing: 0.2px;
+  }
+  .subtitle{
+    text-align:center;
+    margin: 0 0 14px;
+    color: #1d4ed8;
+    font-weight: 900;
+    font-size: 13px;
+  }
+
+  .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 12px 12px;
+    box-shadow: 0 10px 22px rgba(15,23,42,0.06);
+  }
+
+  .kpi{
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 9px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #fbfdff;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+  .kpi b{ color: #111827; }
+
+  .section-title{
+    text-align:center;
+    margin: 10px 0 8px;
+    font-weight: 900;
+    color: #1d4ed8;
+  }
+
+  /* Table */
+  .table-wrap{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+  }
+  table{ width: 100%; border-collapse: collapse; font-size: 12px; }
+  thead th{
+    background: #f59e0b;
+    color: #111827;
+    text-align: left;
+    padding: 10px 10px;
+    font-weight: 900;
+  }
+  tbody td{
+    padding: 9px 10px;
+    border-top: 1px solid var(--line);
+    color: #111827;
+    vertical-align: top;
+  }
+
+  .pill{
+    display:inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 11px;
+    border: 1px solid transparent;
+  }
+  .pill.Small{ background: rgba(16,185,129,0.14); color:#166534; border-color: rgba(16,185,129,0.25); }
+  .pill.Medium{ background: rgba(245,158,11,0.18); color:#92400e; border-color: rgba(245,158,11,0.25); }
+  .pill.Large{ background: rgba(239,68,68,0.16); color:#b91c1c; border-color: rgba(239,68,68,0.25); }
+
+  .muted{ color: var(--muted); }
+  .mt8{ margin-top: 8px; }
+  .mt12{ margin-top: 12px; }
+
+  /* Manual controls */
+  .form-row{ display:grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .form-row-3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+  label{ display:block; font-size: 12px; color: var(--muted); font-weight: 800; margin-bottom: 6px; }
+  input[type="number"], input[type="text"]{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: #fff;
+    outline: none;
+    font-size: 13px;
+  }
+  input:focus{ border-color: rgba(37,99,235,0.55); box-shadow: 0 0 0 3px rgba(37,99,235,0.10); }
+
+  .multi{
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 10px;
+    background: #fff;
+  }
+  .multi .hint{ font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  .multi-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .chk{
+    display:flex; align-items:center; gap:8px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fbfdff;
+    font-size: 13px;
+  }
+  .chk input{ transform: scale(1.05); }
+  .selected-pills{ display:flex; gap:8px; flex-wrap: wrap; margin-top: 10px; }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(239,68,68,0.45);
+    background: rgba(239,68,68,0.06);
+    color: #b91c1c;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  .btn:hover{ background: rgba(239,68,68,0.10); }
+
+  .mini-card{
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    background: #fff;
+  }
+  .mini-card .t{ color: #1d4ed8; font-weight: 900; font-size: 12px; margin-bottom: 6px; }
+  .mini-card .v{ font-weight: 900; color: #111827; font-size: 13px; }
+
+  ul{ margin: 8px 0 0 18px; color: #111827; }
+  li{ margin: 4px 0; color: #111827; }
+  .note{ font-size: 12px; color: var(--muted); margin-top: 8px; }
+
+  @media (max-width: 980px){
+    .grid2{ grid-template-columns: 1fr; }
+    .grid3{ grid-template-columns: 1fr; }
+    .form-row{ grid-template-columns: 1fr; }
+    .form-row-3{ grid-template-columns: 1fr; }
+    .multi-grid{ grid-template-columns: 1fr; }
+    .rec-top{ flex-direction: column; align-items: stretch; }
+  }
+</style>
+
+<div class="rec-wrap">
+  <div class="rec-shell">
+
+    <div class="rec-top">
+      <div class="tabs">
+        <button class="tab-btn" id="btnManual" type="button" onclick="showTab('manual')">Manual Recommendations</button>
+        <button class="tab-btn active" id="btnAuto" type="button" onclick="showTab('auto')">Automatic Recommendations</button>
+      </div>
+
+      <div class="muted" style="font-weight:900;">Welcome, {{ user_name }}</div>
+    </div>
+
+    <!-- ===================== AUTO TAB ===================== -->
+    <div id="autoTab">
+      <div class="title">Auto Recommendations for Pothole Repair</div>
+      <div class="subtitle">Pothole Type: {{ auto.pothole_type }} Pothole</div>
+
+      <div class="grid2">
+        <div class="card">
+          <div class="kpi"><span class="muted">Total Potholes Detected:</span> <b>{{ auto.total_potholes }}</b></div>
+          <div class="kpi"><span class="muted">Average Pothole Volume:</span> <b>{{ auto.avg_volume_cm3 }} cm³</b></div>
+          <div class="kpi"><span class="muted">Time Taken (Per Pothole):</span> <b>{{ auto.time_per_pothole_min }} minutes</b></div>
+        </div>
+
+        <div class="card">
+          <div class="kpi"><span class="muted">Cost Estimate (per Pothole):</span> <b>₹{{ auto.cost_per_pothole_min }} – ₹{{ auto.cost_per_pothole_max }}</b></div>
+          <div class="kpi"><span class="muted">Total Cost (₹):</span> <b>₹{{ auto.total_cost_min }} – ₹{{ auto.total_cost_max }}</b></div>
+          <div class="kpi"><span class="muted">Total Time (min):</span> <b>{{ auto.total_time_min }}</b></div>
+        </div>
+      </div>
+
+      <!-- FULL WIDTH TABLE FIRST -->
+<div style="width:100%; margin:20px 0;">
+  <div class="card">
+    <div class="section-title">Recent Pothole Reports</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Image</th>
+        <th>Date</th>        <!-- ✅ NEW -->
+        <th>Time</th>        <!-- ✅ NEW --> 
+        <th>Place</th>
+        <th>GPS</th>
+        <th>Severity</th>
+        <th>Potholes</th>
+        <th>Volume (cm³)</th>
+        <th>Cost</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+ {% for r in reported_table %}
+ <tr onclick="showPotholeDetail({{ loop.index0 }})" style="cursor:pointer;">
+    <td>{{ loop.index }}</td>
+    <td style="width:80px;"><img src="{{ r.image_url }}" width="70" height="50" style="border-radius:6px; border:2px solid #f59e0b;" onerror="this.src='/static/pothole_sample.jpg'"/></td>
+    
+    <!-- ✅ CHANGED: Separate Date/Time columns -->
+    <td><b>{{ r.date }}</b></td>           <!-- DATE: 22/01/2026 -->
+    <td class="muted">{{ r.time }}</td>    <!-- TIME: 17:45 -->
+    
+    <td title="{{ r.place_name }}">{{ r.place_name[:30] }}...</td>
+    <td class="muted">({{ r.lat }}, {{ r.lon }})</td>
+    <td><span class="pill {{ r.severity }}">{{ r.severity }}</span></td>
+    <td><b>{{ r.pothole_count }}</b></td>
+    <td>{{ "{:,}".format(r.total_volume_cm3|int) }}</td>
+    <td><b>₹{{ "{:,}".format(r.total_cost_min|int) }} – ₹{{ "{:,}".format(r.total_cost_max|int) }}</b></td>
+    <td>{{ r.total_time_min }} min</td>
+  </tr>
+ {% endfor %}
+</tbody>
+</table>
+
+  </div>  <!-- Closes table-wrap -->
+  
+  <div class="note">
+    Tip: This table is built from your <b>reports</b> collection.
+  </div>
+  </div>  <!-- Closes FULL WIDTH card -->
+</div>   <!-- Closes FULL WIDTH container -->
+
+
+<!-- MATERIALS BELOW TABLE -->
+<div class="grid2 mt12">
+  <div class="card">
+    <div class="section-title">Materials & Equipment</div>
+    <div class="muted" style="font-size:13px; line-height:1.55;">
+      Cold mix asphalt (₹25K/ton), Hot mix asphalt (₹35K/ton), Tack coat, Compaction equipment.
+    </div>
+  </div>
+
+
+    <!-- ===================== MANUAL TAB ===================== -->
+    <div id="manualTab" style="display:none;">
+      <div class="title">Pothole Repair Recommendations</div>
+      <div class="subtitle">Select Repair Parameters</div>
+
+      <!-- top KPIs like your report screenshot -->
+      <div class="grid3">
+        <div class="card">
+          <div class="kpi"><span class="muted">Detected Potholes:</span> <b id="mDetected">{{ auto.total_potholes }}</b></div>
+        </div>
+        <div class="card">
+          <div class="kpi"><span class="muted">Avg Pothole Volume:</span> <b id="mAvgVol">{{ auto.avg_volume_cm3 }} cm³</b></div>
+        </div>
+        <div class="card">
+          <div class="kpi">
+            <span class="muted">Road Length:</span>
+            <b><input id="roadLengthM" type="number" min="1" step="1" value="500" style="max-width:140px; text-align:right;" /> m</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid3 mt12">
+        <!-- Materials -->
+<div class="card">
+  <div class="section-title">Materials</div>
+  <div class="multi">
+    <div class="hint">Select material and quantity needed (₹/ton pricing)</div>
+    <div class="multi-grid" id="materialsBox"></div>
+    <div class="selected-pills" id="materialsPills"></div>
+  </div>
+</div>
+
+
+        <!-- Equipment -->
+<div class="card">
+  <div class="section-title">Equipment</div>
+  <div class="multi">
+    <div class="hint">Select equipment and rental days needed</div>
+    <div class="multi-grid" id="equipmentBox"></div>
+    <div class="selected-pills" id="equipmentPills"></div>
+  </div>
+</div>
+
+
+        <!-- Manpower -->
+        <div class="card">
+          <div class="section-title">Manpower</div>
+
+          <div class="form-row-3">
+            <div>
+              <label>Unskilled</label>
+              <input id="unskilled" type="number" min="0" step="1" value="3" />
+            </div>
+            <div>
+              <label>Skilled</label>
+              <input id="skilled" type="number" min="0" step="1" value="2" />
+            </div>
+            <div>
+              <label>Supervisors</label>
+              <input id="supervisors" type="number" min="0" step="1" value="1" />
+            </div>
+          </div>
+
+          <div class="form-row mt12">
+            <div>
+              <label>Base rate min (₹/m³)</label>
+              <input id="rateMin" type="number" min="0" step="100" value="4000" />
+            </div>
+            <div>
+              <label>Base rate max (₹/m³)</label>
+              <input id="rateMax" type="number" min="0" step="100" value="6000" />
+            </div>
+          </div>
+
+          <div class="mt12">
+            <button class="btn" type="button" onclick="calculateManual()">Calculate Repair Estimates</button>
+          </div>
+
+          <div class="note">Manual estimates adjust totals based on chosen parameters and workforce size.</div>
+        </div>
+      </div>
+
+      <!-- Repair Analysis Summary -->
+      <div class="card mt12">
+        <div class="section-title">Repair Analysis Summary</div>
+
+        <div class="grid3">
+          <div class="mini-card">
+            <div class="t">Pothole Category</div>
+            <div class="v" id="outCategory">{{ auto.pothole_type }}</div>
+          </div>
+
+          <div class="mini-card">
+            <div class="t">Base Repair Cost</div>
+            <div class="v" id="outBaseCost">₹0 – ₹0</div>
+          </div>
+
+          <div class="mini-card">
+            <div class="t">Estimated Repair Time</div>
+            <div class="v" id="outTime">0 minutes</div>
+          </div>
+        </div>
+
+        <div class="grid2 mt12">
+          <div class="mini-card">
+            <div class="t">Additional Equipment Cost</div>
+            <div class="v" id="outEquipCost">₹0</div>
+          </div>
+          <div class="mini-card">
+            <div class="t">Additional Materials Cost</div>
+            <div class="v" id="outMatCost">₹0</div>
+          </div>
+        </div>
+
+        <div class="grid2 mt12">
+          <div class="mini-card">
+            <div class="t">Total Repair Cost Estimate</div>
+            <div class="v" id="outTotalCost">₹0 – ₹0</div>
+          </div>
+          <div class="mini-card">
+            <div class="t">Additional Considerations</div>
+            <ul class="muted" style="margin: 0 0 0 18px;">
+              <li>Traffic management and safety cones/signage.</li>
+              <li>Weather constraints (rain delays, curing time).</li>
+              <li>Re-check within 1–2 weeks for settlement/cracks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ PASTE MODAL HERE (before <script>) -->
+<div id="potholeModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; padding:20px; box-sizing:border-box;">
+  <div style="max-width:1200px; margin:0 auto; height:100%; display:flex; align-items:center;">
+    <img id="modalImage" style="max-height:90%; max-width:50%; border-radius:12px;"/>
+    <div id="modalDetails" style="color:white; margin-left:30px; flex:1;">
+      <h2 id="modalTitle"></h2>
+      <p id="modalAddress"></p>
+      <p><b>Severity:</b> <span id="modalSeverity"></span></p>
+      <p><b>Volume:</b> <span id="modalVolume"></span></p>
+      <p><b>Est. Cost:</b> <span id="modalCost"></span></p>
+      <button onclick="closeModal()" style="background:#ef4444; color:white; border:none; padding:12px 24px; border-radius:8px; font-weight:900; cursor:pointer;">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  // data from backend (safe defaults)
+  const AUTO = {
+    potholeType: "{{ auto.pothole_type }}",
+    totalPotholes: Number("{{ auto.total_potholes }}") || 0,
+    avgVolCm3: Number("{{ auto.avg_volume_cm3 }}") || 0,
+    totalTimeMin: Number("{{ auto.total_time_min }}") || 0
+  };
+
+  // Simple options (edit costs as you like)
+  const MATERIALS = [
+    { id: "cold_mix", name: "Cold mix asphalt", cost: 25000 },
+    { id: "hot_mix", name: "Hot mix asphalt", cost: 35000 },
+    { id: "tack_coat", name: "Tack coat / emulsion", cost: 15000 },
+    { id: "bitumen", name: "Bitumen binder", cost: 20000 },
+  ];
+
+  const EQUIPMENT = [
+    { id: "material_truck", name: "Material truck", cost: 45000 },
+    { id: "compactor", name: "Compaction device", cost: 30000 },
+    { id: "cutting_tool", name: "Mechanical cutting tool", cost: 25000 },
+    { id: "brooms", name: "Mechanical brooms", cost: 12000 },
+    { id: "asphalt_mixer", name: "Asphalt mix cart/mixer", cost: 38000 },
+  ];
+
+  function money(n){
+    n = Math.round(Number(n) || 0);
+    return "₹" + n.toLocaleString("en-IN");
+  }
+
+  function renderOptions(boxId, pillsId, options, type){
+  const box = document.getElementById(boxId);
+  const pills = document.getElementById(pillsId);
+  box.innerHTML = "";
+  pills.innerHTML = "";
+
+  options.forEach(opt => {
+    const row = document.createElement("div");
+    row.style.marginBottom = "12px";
+    row.innerHTML = `
+      <label style="font-size:12px; color:var(--muted); font-weight:800; margin-bottom:4px; display:block;">${opt.name}</label>
+      <div style="display:flex; gap:8px; align-items:center;">
+        <select class="form-control" data-type="${type}" data-id="${opt.id}" style="flex:1; padding:8px 12px; border-radius:8px; border:1px solid var(--line); background:#fff; font-size:13px;">
+          <option value="0">None</option>
+          <option value="5000">5,000 units</option>
+          <option value="10000">10,000 units</option>
+          <option value="15000">15,000 units</option>
+          <option value="20000">20,000 units</option>
+          <option value="custom">Custom amount</option>
+        </select>
+        <input type="number" data-custom="${opt.id}" placeholder="amt" style="width:80px; padding:8px; border-radius:8px; border:1px solid var(--line); display:none;" min="0" step="1000"/>
+      </div>
+    `;
+    box.appendChild(row);
+  });
+
+  box.addEventListener("change", () => updatePills(pillsId, options, type));
+  updatePills(pillsId, options, type);
+}
+
+
+  function selectedIds(type){
+    return Array.from(document.querySelectorAll(`input[type="checkbox"][data-type="${type}"]:checked`))
+      .map(x => x.getAttribute("data-id"));
+  }
+
+  function updatePills(pillsId, options, type){
+    const pills = document.getElementById(pillsId);
+    pills.innerHTML = "";
+    const ids = selectedIds(type);
+
+    ids.forEach(id => {
+      const opt = options.find(o => o.id === id);
+      if(!opt) return;
+      const p = document.createElement("span");
+      p.className = "pill Medium";
+      p.textContent = opt.name;
+      pills.appendChild(p);
+    });
+
+    if(ids.length === 0){
+      const p = document.createElement("span");
+      p.className = "pill Small";
+      p.textContent = "None selected";
+      pills.appendChild(p);
+    }
+  }
+
+  function calculateManual(){
+    const roadLen = Math.max(1, Number(document.getElementById("roadLengthM").value) || 500);
+
+    const rateMin = Math.max(0, Number(document.getElementById("rateMin").value) || 0);
+    const rateMax = Math.max(rateMin, Number(document.getElementById("rateMax").value) || rateMin);
+
+    const unskilled = Math.max(0, Number(document.getElementById("unskilled").value) || 0);
+    const skilled = Math.max(0, Number(document.getElementById("skilled").value) || 0);
+    const supervisors = Math.max(0, Number(document.getElementById("supervisors").value) || 0);
+
+    const team = Math.max(1, unskilled + skilled + supervisors);
+
+    // volume total (cm3 -> m3): (avg * count) / 1e6
+    const totalVolM3 = (AUTO.avgVolCm3 * AUTO.totalPotholes) / 1e6;
+
+    // scale by road length (500m = baseline like your figure); adjust if you want
+    const scale = roadLen / 500.0;
+
+    const baseMin = totalVolM3 * rateMin * scale;
+    const baseMax = totalVolM3 * rateMax * scale;
+
+    const matIds = selectedIds("mat");
+    const eqIds = selectedIds("eq");
+
+    let matCost = 0;
+let eqCost = 0;
+
+// Materials cost (price per ton * tons selected)
+document.querySelectorAll(`select[data-type="mat"]`).forEach(select => {
+  const id = select.getAttribute("data-id");
+  const value = select.value;
+  const opt = MATERIALS.find(x => x.id === id);
+  if(opt && value !== "0"){
+    if(value === "custom"){
+      const customInput = document.querySelector(`input[data-custom="${id}"]`);
+      matCost += (opt.cost / 1000) * Number(customInput?.value || 0);
+    } else {
+      matCost += (opt.cost / 1000) * Number(value);
+    }
+  }
+});
+
+// Equipment cost (daily rental * days selected)  
+document.querySelectorAll(`select[data-type="eq"]`).forEach(select => {
+  const id = select.getAttribute("data-id");
+  const value = select.value;
+  const opt = EQUIPMENT.find(x => x.id === id);
+  if(opt && value !== "0"){
+    if(value === "custom"){
+      const customInput = document.querySelector(`input[data-custom="${id}"]`);
+      eqCost += opt.cost * Number(customInput?.value || 0);
+    } else {
+      eqCost += opt.cost * (Number(value) / 10000); // assumes 10k units = 1 day rental
+    }
+  }
+});
+    const totalMin = baseMin + matCost + eqCost;
+    const totalMax = baseMax + matCost + eqCost;
+
+    // time: start from AUTO total time; speedup by team size (baseline team=6)
+    const baselineTeam = 6;
+    const timeAdj = AUTO.totalTimeMin * (baselineTeam / team) * scale;
+
+    const days = Math.max(1, Math.ceil(timeAdj / (60 * 8))); // 8-hour workday
+
+    document.getElementById("outCategory").textContent = AUTO.potholeType;
+    document.getElementById("outBaseCost").textContent = `${money(baseMin)} – ${money(baseMax)}`;
+    document.getElementById("outEquipCost").textContent = money(eqCost);
+    document.getElementById("outMatCost").textContent = money(matCost);
+    document.getElementById("outTotalCost").textContent = `${money(totalMin)} – ${money(totalMax)}`;
+    document.getElementById("outTime").textContent = `${Math.round(timeAdj)} minutes (~${days} day(s))`;
+  }
+
+  function showTab(which){
+    const autoTab = document.getElementById("autoTab");
+    const manualTab = document.getElementById("manualTab");
+
+    document.getElementById("btnAuto").classList.remove("active");
+    document.getElementById("btnManual").classList.remove("active");
+
+    if(which === "auto"){
+      autoTab.style.display = "block";
+      manualTab.style.display = "none";
+      document.getElementById("btnAuto").classList.add("active");
+    }else{
+      autoTab.style.display = "none";
+      manualTab.style.display = "block";
+      document.getElementById("btnManual").classList.add("active");
+      // do an initial compute once manual is opened
+      calculateManual();
+    }
+  }
+
+  // init manual options
+  renderOptions("materialsBox", "materialsPills", MATERIALS, "mat");
+  renderOptions("equipmentBox", "equipmentPills", EQUIPMENT, "eq");
+
+  // default: start on Auto
+    // default: start on Auto
+  showTab("auto");
+
+  // Pass table data to JavaScript
+  window.reported_table = {{ reported_table|tojson|safe }};
+
+  // Pothole modal functions
+  function showPotholeDetail(index) {
+    const row = window.reported_table[index];
+    document.getElementById('modalImage').src = row.image_url;
+    document.getElementById('modalTitle').textContent = `Pothole Report #${index+1}`;
+    document.getElementById('modalAddress').textContent = row.place_name;
+    document.getElementById('modalSeverity').textContent = row.severity;
+    document.getElementById('modalVolume').textContent = row.total_volume_cm3.toLocaleString() + ' cm³';
+    document.getElementById('modalCost').textContent = `₹${row.total_cost_min.toLocaleString()} - ₹${row.total_cost_max.toLocaleString()}`;
+    document.getElementById('potholeModal').style.display = 'block';
+  }
+  function showPotholeDetail(index) {
+  const row = window.reported_table[index];
+  
+  // Clear previous canvas
+  const modalImg = document.getElementById('modalImage');
+  modalImg.src = row.image_url;
+  
+  // Add bounding boxes when image loads
+  modalImg.onload = function() {
+    drawBoundingBoxes(modalImg, row.bboxes || []);
+  }
+  
+  // Fill details
+  document.getElementById('modalTitle').textContent = `Pothole Report #${index+1}`;
+  document.getElementById('modalAddress').textContent = row.place_name;
+  document.getElementById('modalSeverity').textContent = row.severity;
+  document.getElementById('modalVolume').textContent = row.total_volume_cm3.toLocaleString() + ' cm³';
+  document.getElementById('modalCost').textContent = `₹${row.total_cost_min.toLocaleString()} - ₹${row.total_cost_max.toLocaleString()}`;
+  document.getElementById('potholeModal').style.display = 'block';
+}
+
+function drawBoundingBoxes(img, bboxes) {
+  const canvas = document.createElement('canvas');
+  canvas.width = img.width;
+  canvas.height = img.height;
+  canvas.style.position = 'absolute';
+  canvas.style.top = '0';
+  canvas.style.left = '0';
+  canvas.style.pointerEvents = 'none';
+  canvas.style.borderRadius = '12px';
+  
+  const ctx = canvas.getContext('2d');
+  ctx.strokeStyle = '#ff0000';
+  ctx.lineWidth = 4;
+  ctx.fillStyle = 'rgba(255,0,0,0.2)';
+  
+  bboxes.forEach(bbox => {
+    const [x, y, w, h] = bbox;
+    const left = (x - w/2) * canvas.width;
+    const top = (y - h/2) * canvas.height;
+    const width = w * canvas.width;
+    const height = h * canvas.height;
+    
+    ctx.strokeRect(left, top, width, height);
+    ctx.fillRect(left, top, width, height);
+  });
+  
+  img.parentNode.appendChild(canvas);
+}
+
+  
+  function closeModal() { 
+    document.getElementById('potholeModal').style.display = 'none'; 
+  }
+  
+  document.getElementById('potholeModal').onclick = e => { 
+    if(e.target.id === 'potholeModal') closeModal(); 
+  }
+</script>
+
+{% endblock %}

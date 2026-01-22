@@ -1,47 +1,391 @@
-{% extends "base.html" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pothole Map</title>
 
-<style>
-  body {
-    background: linear-gradient(135deg, #d6e6f2 0%, #ffffff 45%, #c8abe6 100%);
-  }
-  .map-header {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:1rem;
-  }
-  .map-header h1 {
-    font-size:1.4rem;
-    margin:0;
-    color:#1f2933;
-  }
-  .btn-back {
-    padding:0.45rem 1rem;
-    border-radius:999px;
-    border:1px solid #d1d5db;
-    background:#ffffff;
-    font-size:0.85rem;
-    text-decoration:none;
-    color:#111827;
-  }
-  .map-wrapper {
-    background:#ffffff;
-    border-radius:24px;
-    padding:0.8rem;
-    box-shadow:
-      0 18px 45px rgba(148,163,184,0.35),
-      0 0 0 1px rgba(148,163,184,0.3);
-  }
-</style>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
 
-<div class="map-header">
-  <h1>Pothole map (OpenStreetMap)</h1>
-  <a href="{{ url_for('dashboard') }}" class="btn-back">Back to dashboard</a>
-</div>
+  <style>
+    :root{
+      --panel-w: 340px;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --btn: #2563eb;
+      --btn2: #0ea5e9;
+      --success: #10b981;
+      --danger: #ef4444;
+      --warn: #f59e0b;
+    }
 
-<div class="map-wrapper">
-  {{ map_html|safe }}
-</div>
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#0b1220; }
+    .page{ height:100vh; display:flex; overflow:hidden; }
+    .map-wrap{ position:relative; flex:1; min-width:0; background:#111827; }
+    #map{ height:100%; width:100%; }
 
-{% endblock %}
+    .search-bar{
+      position:absolute; top:14px; left:14px; z-index:1000;
+      width:min(520px, calc(100% - 28px));
+      background:rgba(255,255,255,0.95);
+      border-radius:12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+      padding:10px 12px;
+      display:flex; gap:10px; align-items:center;
+    }
+    .search-bar input{ flex:1; border:1px solid #e5e7eb; border-radius:10px; padding:10px 12px; outline:none; font-size:14px; }
+    .search-bar button{ border:none; border-radius:10px; padding:10px 12px; background:#111827; color:#fff; cursor:pointer; font-weight:700; }
+
+    .panel{
+      width:var(--panel-w);
+      background: #f8fafc;
+      border-left: 1px solid #e5e7eb;
+      padding:14px 14px 16px 14px;
+      overflow:auto;
+    }
+    .panel h3{ margin:6px 0 10px; font-size:16px; color:#0f172a; }
+
+    .card{
+      background:var(--card);
+      border:1px solid #e5e7eb;
+      border-radius:14px;
+      padding:12px;
+      margin-bottom:12px;
+      box-shadow: 0 8px 18px rgba(15,23,42,0.06);
+    }
+
+    .btn{
+      width:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px 12px;
+      border:none;
+      border-radius:12px;
+      color:white;
+      background: var(--btn);
+      cursor:pointer;
+      font-weight:800;
+      margin:8px 0;
+      font-size:14px;
+    }
+    .btn.secondary{ background: var(--btn2); }
+    .btn.success{ background: var(--success); }
+    .btn.gray{ background: #334155; }
+    .btn.outline{ background:#fff; border:1px solid #e5e7eb; color:#111827; }
+
+    label{ font-size:12px; color:#111827; font-weight:800; display:block; margin:10px 0 6px; }
+    .field{ width:100%; border:1px solid #e5e7eb; border-radius:12px; padding:11px 12px; outline:none; font-size:14px; background:#fff; }
+    .muted{ font-size:12px; color:var(--muted); margin-top:6px; line-height:1.35; }
+
+    .legend{ display:flex; flex-wrap:wrap; gap:10px; margin-top:8px; align-items:center; }
+    .dot{ width:10px;height:10px;border-radius:50%; display:inline-block;margin-right:6px; vertical-align:middle; }
+
+    @media (max-width: 860px){
+      .page{ flex-direction:column; }
+      .panel{ width:100%; height: 360px; border-left:none; border-top:1px solid #e5e7eb; }
+      .map-wrap{ height: calc(100vh - 360px); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="map-wrap">
+      <div class="search-bar">
+        <input id="jumpText" type="text" placeholder="Search / jump to a place (client-side only)..." />
+        <button type="button" onclick="jumpToPlace()">Go</button>
+      </div>
+      <div id="map"></div>
+    </div>
+
+    <aside class="panel">
+      <div class="card">
+        <h3>Map Controls</h3>
+        <button class="btn secondary" type="button" onclick="setBase('satellite')">Satellite</button>
+        <button class="btn" type="button" onclick="setBase('road')">Road Map</button>
+        <button class="btn gray" type="button" onclick="toggleMajorRoads()">Major Roads</button>
+        <button class="btn outline" type="button" onclick="resetView()">Reset to Default</button>
+      </div>
+
+      <div class="card">
+        <h3>Route (Source → Destination)</h3>
+
+        <form method="POST" action="/map">
+          <label for="start_location">Source</label>
+          <input class="field" id="start_location" name="start_location"
+                 placeholder="Ex: Gajuwaka, Visakhapatnam"
+                 value="{{ typed_start if typed_start is defined else '' }}" />
+
+          <label for="end_location">Destination</label>
+          <input class="field" id="end_location" name="end_location"
+                 placeholder="Ex: Kommadi, Visakhapatnam"
+                 value="{{ typed_end if typed_end is defined else '' }}" />
+
+          <button class="btn success" type="submit" style="margin-top:12px;">Update Route</button>
+        </form>
+
+        {% if route_source %}
+          <div class="muted">Route provider: {{ route_source }}</div>
+        {% endif %}
+        {% if route_error %}
+          <div class="muted" style="color:#b91c1c;">{{ route_error }}</div>
+        {% endif %}
+
+        <div id="pCount" class="muted"></div>
+        <div id="hint" class="muted" style="display:none;">
+          Select Source + Destination and click Update Route to see potholes on the journey.
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Legend</h3>
+        <div class="legend">
+          <div><span class="dot" style="background:#ef4444;"></span>Large</div>
+          <div><span class="dot" style="background:#f59e0b;"></span>Medium</div>
+          <div><span class="dot" style="background:#10b981;"></span>Small</div>
+        </div>
+        <div class="muted" style="margin-top:10px;">
+          <a href="/dashboard">Back to dashboard</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    // ---------- Base layers ----------
+    const road = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    });
+
+    const satellite = L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      { maxZoom: 19, attribution: "Tiles &copy; Esri" }
+    );
+
+    const majorRoads = L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      opacity: 0.95,
+      attribution: '&copy; OpenStreetMap contributors, HOT'
+    });
+
+    // ---------- Map init ----------
+    const DEFAULT_CENTER = [17.6868, 83.2185];
+    const DEFAULT_ZOOM = 11;
+
+    const map = L.map("map", {
+      center: DEFAULT_CENTER,
+      zoom: DEFAULT_ZOOM,
+      layers: [road]
+    });
+
+    let currentBase = "road";
+    let majorRoadsOn = false;
+
+    function setBase(which){
+      if(which === currentBase) return;
+      if(currentBase === "road") map.removeLayer(road);
+      if(currentBase === "satellite") map.removeLayer(satellite);
+
+      if(which === "road") map.addLayer(road);
+      if(which === "satellite") map.addLayer(satellite);
+
+      currentBase = which;
+    }
+
+    function toggleMajorRoads(){
+      majorRoadsOn = !majorRoadsOn;
+      if(majorRoadsOn) map.addLayer(majorRoads);
+      else map.removeLayer(majorRoads);
+    }
+
+    function resetView(){
+      map.setView(DEFAULT_CENTER, DEFAULT_ZOOM);
+    }
+
+    // ---------- Data from Flask ----------
+    const routeGeo = {{ (route_geojson if route_geojson else None) | tojson }};
+    const potholes = {{ (potholes if potholes else []) | tojson }};
+    const currentStart = {{ (current_start if current_start else None) | tojson }};
+    const currentEnd = {{ (current_end if current_end else None) | tojson }};
+
+    // ---------- Count / hint ----------
+    const pCountEl = document.getElementById("pCount");
+    const hintEl = document.getElementById("hint");
+
+    if(routeGeo && routeGeo.type === "LineString"){
+      if(pCountEl) pCountEl.textContent = `Potholes on route: ${potholes.length}`;
+      if(hintEl) hintEl.style.display = "none";
+    }else{
+      if(pCountEl) pCountEl.textContent = "";
+      if(hintEl) hintEl.style.display = "block";
+    }
+
+    // ---------- Helpers ----------
+    function esc(s){
+      if(s === null || s === undefined) return "";
+      return String(s)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function sevKey(sev){
+      const s = (sev || "").toLowerCase();
+      if(s.includes("large")) return "large";
+      if(s.includes("medium")) return "medium";
+      return "small";
+    }
+
+    // Choose icon color based on severity
+    function potholeIcon(sev){
+      const k = sevKey(sev);
+      let url;
+      if(k === "large"){
+        // red
+        url = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png";
+      }else if(k === "medium"){
+        // orange
+        url = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png";
+      }else{
+        // green
+        url = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png";
+      }
+      const shadowUrl = "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png";
+
+      return L.icon({
+        iconUrl: url,
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowUrl: shadowUrl,
+        shadowSize: [41, 41],
+        shadowAnchor: [12, 41]
+      });
+    }
+
+    // End marker = GREEN FLAG (SVG data URI)
+    const greenFlagSvg =
+      `<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 64 64">
+        <path d="M18 6c-1.7 0-3 1.3-3 3v49c0 1.7 1.3 3 3 3s3-1.3 3-3V40h24.5c1.6 0 2.5-1.8 1.6-3.1L40 25l9.1-11.9c.9-1.3 0-3.1-1.6-3.1H21V9c0-1.7-1.3-3-3-3z" fill="#16a34a"/>
+        <path d="M18 6c-1.7 0-3 1.3-3 3v49c0 1.7 1.3 3 3 3s3-1.3 3-3V9c0-1.7-1.3-3-3-3z" fill="#0f172a"/>
+      </svg>`;
+    const greenFlagUrl = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(greenFlagSvg);
+
+    const endFlagIcon = L.icon({
+      iconUrl: greenFlagUrl,
+      iconSize: [36, 36],
+      iconAnchor: [12, 32],
+      popupAnchor: [8, -26]
+    });
+
+    // ---------- Start / End markers ----------
+    let startMarker = null, endMarker = null;
+
+    if(currentStart && currentStart.lat != null && currentStart.lon != null){
+      startMarker = L.marker([currentStart.lat, currentStart.lon]).addTo(map);
+      startMarker.bindPopup(`<b>Source</b><br/>${esc(currentStart.name || "")}`);
+    }
+
+    if(currentEnd && currentEnd.lat != null && currentEnd.lon != null){
+      endMarker = L.marker([currentEnd.lat, currentEnd.lon], { icon: endFlagIcon }).addTo(map);
+      endMarker.bindPopup(`<b>Destination</b><br/>${esc(currentEnd.name || "")}`);
+    }
+
+    // ---------- Route ----------
+    let routeLayerMain = null;
+    if(routeGeo && routeGeo.type === "LineString"){
+      L.geoJSON(routeGeo, { style: { color: "#ffffff", weight: 10, opacity: 0.95 } }).addTo(map);
+      routeLayerMain = L.geoJSON(routeGeo, { style: { color: "#1a73e8", weight: 6, opacity: 0.95 } }).addTo(map);
+    }
+
+    // Fit bounds: route > markers > default
+    try{
+      if(routeLayerMain){
+        map.fitBounds(routeLayerMain.getBounds(), { padding: [30, 30] });
+      }else if(startMarker && endMarker){
+        map.fitBounds(L.featureGroup([startMarker, endMarker]).getBounds(), { padding: [40, 40] });
+      }else if(startMarker){
+        map.setView([currentStart.lat, currentStart.lon], 13);
+      }else if(endMarker){
+        map.setView([currentEnd.lat, currentEnd.lon], 13);
+      }
+    }catch(e){}
+
+    // ---------- Pothole markers (pin style) ----------
+    const used = {};
+    function offsetLatLon(lat, lon){
+      const key = `${lat.toFixed(6)},${lon.toFixed(6)}`;
+      const n = used[key] || 0;
+      used[key] = n + 1;
+      if(n === 0) return [lat, lon];
+      const step = 0.00006 * n;
+      return [lat + step, lon + step];
+    }
+
+    potholes.forEach((p) => {
+      if(p.lat == null || p.lon == null) return;
+
+      const place = p.place_name || "Reported pothole";
+      const sev = p.severity || "Small";
+      const ll = offsetLatLon(parseFloat(p.lat), parseFloat(p.lon));
+
+      let popup = `<b>${esc(place)}</b>`
+        + `<br/>Severity: <b>${esc(sev)}</b>`
+        + `<br/>Lat: ${esc(p.lat)}`
+        + `<br/>Lon: ${esc(p.lon)}`;
+
+      if (p.source === "db") {
+        popup += `<hr style="border:none;border-top:1px solid #e5e7eb;margin:8px 0;">`;
+        popup += `<b>Reported (MongoDB)</b>`;
+        if (p.pothole_count != null) popup += `<br/>Potholes detected: <b>${esc(p.pothole_count)}</b>`;
+        if (p.total_cost_min != null || p.total_cost_max != null) {
+          popup += `<br/>Cost (₹): <b>${esc(p.total_cost_min)} – ${esc(p.total_cost_max)}</b>`;
+        }
+        if (p.total_time_min != null) popup += `<br/>Time (min): <b>${esc(p.total_time_min)}</b>`;
+        if (p.user_email) popup += `<br/><span style="color:#64748b;font-size:12px;">By: ${esc(p.user_email)}</span>`;
+        if (p.created_at) popup += `<br/><span style="color:#64748b;font-size:12px;">At: ${esc(p.created_at)}</span>`;
+      }
+
+      if (p.snap_dist_m != null) {
+        popup += `<br/>Distance to route: <b>${Math.round(p.snap_dist_m)} m</b>`;
+      }
+
+      L.marker(ll, {
+        icon: potholeIcon(sev),
+        zIndexOffset: 1000
+      })
+      .addTo(map)
+      .bindPopup(popup);
+    });
+
+    // ---------- Client-side jump ----------
+    async function jumpToPlace(){
+      const q = document.getElementById("jumpText").value.trim();
+      if(!q) return;
+
+      const url = "https://nominatim.openstreetmap.org/search?format=json&q=" + encodeURIComponent(q);
+      try{
+        const res = await fetch(url, { headers: { "Accept": "application/json" }});
+        const data = await res.json();
+        if(!data || !data.length) return;
+        map.setView([parseFloat(data[0].lat), parseFloat(data[0].lon)], 13);
+      }catch(e){}
+    }
+  </script>
+</body>
+</html>

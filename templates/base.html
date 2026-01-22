@@ -2,118 +2,208 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AI-Based Pothole Detection System</title>
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Based Pothole Detection</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+
   <style>
-    :root {
-      --bg: #020617;
-      --bg-card: #0f172a;
-      --accent: #6366f1;
-      --accent2: #22c55e;
-      --text-main: #e5e7eb;
-      --text-muted: #9ca3af;
-      --border-subtle: #111827;
-    }
-    * { box-sizing: border-box; }
-    body {
-      font-family: "Poppins", system-ui, sans-serif;
-      background: radial-gradient(circle at top left, #1e293b 0, #020617 45%);
-      color: var(--text-main);
-      min-height: 100vh;
-      margin: 0;
-    }
-    a { color: inherit; text-decoration: none; }
-
-    .page-wrap {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1.5rem 1.8rem 2.5rem;
+    :root{
+      --bg: #f3f4f6;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --brand: #2563eb;
+      --brand2:#22c55e;
+      --sidebar:#f8fafc;
+      --shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
     }
 
-    .app-header {
+    *{ box-sizing: border-box; }
+    body{ margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); }
+
+    .app{
+      height: 100vh;
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 1.25rem;
-      border-radius: 18px;
-      background: linear-gradient(90deg, #020617, #020617ee),
-                  radial-gradient(circle at left, #1d4ed8 0, transparent 60%);
-      border: 1px solid #1f2937;
-      margin-bottom: 1.5rem;
+      overflow: hidden;
     }
-    .app-title {
+
+    .sidebar{
+      width: 250px;
+      background: var(--sidebar);
+      border-right: 1px solid var(--border);
+      padding: 18px 14px;
       display: flex;
       flex-direction: column;
-      gap: 0.2rem;
-    }
-    .app-title h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
-      letter-spacing: 0.02em;
-    }
-    .app-title p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-    .app-badge {
-      font-size: 0.75rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(34, 197, 94, 0.12);
-      color: #bbf7d0;
-      border: 1px solid rgba(34, 197, 94, 0.25);
+      gap: 14px;
     }
 
-    .flash-container {
+    .brand{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 14px;
+      box-shadow: var(--shadow);
+    }
+    .brand h2{ margin:0; font-size: 16px; letter-spacing: 0.2px; }
+    .brand p{ margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.3; }
+
+    .nav{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 10px;
+      box-shadow: var(--shadow);
+    }
+    .nav a{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 650;
+      font-size: 14px;
+    }
+    .nav a:hover{ background:#eef2ff; }
+    .nav a.active{
+      background: #ef4444;
+      color:#ffffff;
+    }
+
+    .nav .hint{
+      padding: 8px 10px 4px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+
+    .main{
+      flex: 1;
+      min-width: 0;
+      overflow: auto;
+      padding: 16px;
+    }
+
+    .flash-container{
       position: fixed;
-      top: 1rem;
-      right: 1rem;
+      top: 12px;
+      right: 12px;
       z-index: 9999;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
     }
-    .flash {
-      padding: 0.55rem 0.9rem;
-      border-radius: 999px;
-      margin-bottom: 0.35rem;
-      font-size: 0.8rem;
+    .flash{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--brand);
+      padding: 10px 12px;
+      border-radius: 14px;
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      color: var(--text);
+      min-width: 260px;
+      max-width: 360px;
     }
-    .flash.success { background:#22c55e33; color:#bbf7d0; }
-    .flash.danger  { background:#ef444433; color:#fecaca; }
-    .flash.warning { background:#f9731633; color:#fed7aa; }
-    .flash.info    { background:#0ea5e933; color:#bae6fd; }
+    .flash.success{ border-left-color: var(--brand2); }
+    .flash.danger{ border-left-color: #ef4444; }
+    .flash.warning{ border-left-color: #f59e0b; }
+    .flash.info{ border-left-color: #0ea5e9; }
 
-    .btn {
-      padding: 0.55rem 1.15rem;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      font-weight: 500;
-      font-size: 0.9rem;
+    /* -------- AUTH MODALS -------- */
+    .auth-modal{
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.40);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 99999;
+      padding: 14px;
     }
-    .btn.primary {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color: white;
+    .auth-card{
+      width: min(420px, 100%);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px 16px 14px;
+      box-shadow: 0 22px 60px rgba(15, 23, 42, 0.25);
     }
-    .btn.outline {
+    .auth-top{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .auth-top h3{
+      margin:0;
+      font-size: 16px;
+      color: var(--text);
+    }
+    .auth-close{
+      border:none;
       background: transparent;
-      border: 1px solid #4b5563;
-      color: var(--text-main);
+      cursor: pointer;
+      font-size: 22px;
+      line-height: 1;
+      color: #111827;
+    }
+    .auth-grid{ display:grid; gap:10px; }
+    .auth-field{
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 11px 12px;
+      font-size: 14px;
+      outline: none;
+      background: #f9fafb;
+    }
+    .auth-field:focus{
+      background:#fff;
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    }
+    .auth-primary{
+      width: 100%;
+      margin-top: 8px;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 12px;
+      background: #2563eb;
+      color: #fff;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .auth-secondary{
+      width: 100%;
+      margin-top: 10px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 12px;
+      background: #fff;
+      color: #111827;
+      font-weight: 900;
+      cursor: pointer;
+    }
+    .auth-note{
+      margin: 10px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.35;
     }
 
-    @media (max-width: 900px) {
-      .page-wrap { padding: 1rem 1.1rem 2rem; }
-      .app-header { flex-direction: column; align-items: flex-start; }
-      .app-title h1 { font-size: 1.4rem; }
+    @media (max-width: 860px){
+      .sidebar{ width: 210px; }
+      .main{ padding: 12px; }
     }
   </style>
 </head>
 <body>
+
   <div class="flash-container">
     {% with messages = get_flashed_messages(with_categories=true) %}
       {% if messages %}
@@ -124,8 +214,136 @@
     {% endwith %}
   </div>
 
-  <div class="page-wrap">
-    {% block content %}{% endblock %}
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <h2>AI Pothole Detection</h2>
+        <p>YOLOv8 + MiDaS + Cost Estimation</p>
+      </div>
+
+      {% set ep = request.endpoint %}
+      <nav class="nav">
+        <a class="{% if ep == 'dashboard' %}active{% endif %}" href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a class="{% if ep == 'pothole_map' %}active{% endif %}" href="{{ url_for('pothole_map') }}">Maps</a>
+
+        <!-- NEW: Recommendation -->
+        <a class="{% if ep == 'recommendations' %}active{% endif %}" href="{{ url_for('recommendations') }}">Recommendation</a>
+
+        <div class="hint">Use Dashboard for detection, Maps for route potholes, and Recommendation for repair planning.</div>
+      </nav>
+    </aside>
+
+    <main class="main">
+      {% block content %}{% endblock %}
+    </main>
   </div>
+
+  <!-- ---------- LOGIN MODAL ---------- -->
+  <div class="auth-modal" id="loginModal">
+    <div class="auth-card">
+      <div class="auth-top">
+        <h3>Login</h3>
+        <button class="auth-close" type="button" onclick="closeAuthModal('loginModal')">&times;</button>
+      </div>
+
+      <form method="POST" action="{{ url_for('auth_action') }}">
+        <input type="hidden" name="next" value="{{ request.full_path }}">
+        <input type="hidden" name="form_type" value="login" />
+        <div class="auth-grid">
+          <input class="auth-field" type="email" name="email_login" placeholder="Email" required />
+          <input class="auth-field" type="password" name="password_login" placeholder="Password" required />
+        </div>
+        <button class="auth-primary" type="submit">Login</button>
+      </form>
+
+      <button class="auth-secondary" type="button" onclick="switchToSignup()">
+        Create new account
+      </button>
+      <p class="auth-note">New user? Click “Create new account” to open signup.</p>
+    </div>
+  </div>
+
+  <!-- ---------- SIGNUP MODAL ---------- -->
+  <div class="auth-modal" id="signupModal">
+    <div class="auth-card">
+      <div class="auth-top">
+        <h3>Signup</h3>
+        <button class="auth-close" type="button" onclick="closeAuthModal('signupModal')">&times;</button>
+      </div>
+
+      <form method="POST" action="{{ url_for('auth_action') }}">
+        <input type="hidden" name="next" value="{{ request.full_path }}">
+        <input type="hidden" name="form_type" value="signup" />
+        <div class="auth-grid">
+          <input class="auth-field" type="text" name="name" placeholder="Full name" required />
+          <input class="auth-field" type="email" name="email" placeholder="Email" required />
+          <input class="auth-field" type="password" name="password" placeholder="Password" required />
+        </div>
+        <button class="auth-primary" type="submit" style="background:#22c55e;">Create Account</button>
+      </form>
+
+      <button class="auth-secondary" type="button" onclick="switchToLogin()">
+        Back to Login
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function openAuthModal(id){
+      const m = document.getElementById(id);
+      if(m) m.style.display = "flex";
+    }
+    function closeAuthModal(id){
+      const m = document.getElementById(id);
+      if(m) m.style.display = "none";
+    }
+
+    function openLoginModal(){ openAuthModal("loginModal"); }
+    function openSignupModal(){ openAuthModal("signupModal"); }
+
+    function switchToSignup(){
+      closeAuthModal("loginModal");
+      openAuthModal("signupModal");
+    }
+    function switchToLogin(){
+      closeAuthModal("signupModal");
+      openAuthModal("loginModal");
+    }
+
+    ["loginModal","signupModal"].forEach((id)=>{
+      const m = document.getElementById(id);
+      if(!m) return;
+      m.addEventListener("click", (e) => {
+        if(e.target === m) closeAuthModal(id);
+      });
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if(e.key === "Escape"){
+        closeAuthModal("loginModal");
+        closeAuthModal("signupModal");
+      }
+    });
+
+    // Auto-open: /dashboard?modal=login or /dashboard?modal=signup
+    // Fix: always close first, then open if param exists, then remove param.
+    (function(){
+      // Force close in case page cached modal state
+      closeAuthModal("loginModal");
+      closeAuthModal("signupModal");
+
+      const url = new URL(window.location.href);
+      const modal = url.searchParams.get("modal");
+
+      if(modal === "login") openLoginModal();
+      if(modal === "signup") openSignupModal();
+
+      if(modal){
+        url.searchParams.delete("modal");
+        window.history.replaceState({}, "", url.toString());
+      }
+    })();
+  </script>
+
 </body>
 </html>

@@ -537,20 +537,144 @@ def logout():
 
 from datetime import datetime
 
+from flask import session, render_template
+from datetime import datetime
+from pymongo import MongoClient  # pip install pymongo
+
+# ✅ Add this ONCE at the top of your app_flask.py (not inside route)
+# mongo_client = MongoClient('mongodb://localhost:27017/')
+# db = mongo_client['pothole_app']
+
+# @app.route('/recommendations')
+# def recommendations():
+#     user_name = session.get("user_name", "Guest")
+    
+#     # ✅ FIXED: MongoDB + Globals (MongoDB first, then globals)
+#     reports = []
+    
+#     # Try MongoDB first
+#     try:
+#         from pymongo import MongoClient
+#         client = MongoClient('mongodb://localhost:27017/')
+#         db = client['pothole_app']
+#         mongo_reports = list(db.pothole_reports.find().sort("created_at", -1).limit(50))
+#         reports.extend(mongo_reports)
+#         client.close()
+#     except:
+#         print("MongoDB unavailable, using globals only")
+#         pass
+    
+#     # Add globals as fallback/new data
+#     global_reports = globals().get('recommendation_reports', [])
+#     reports.extend(global_reports)
+    
+#     # Remove duplicates by image_url (keep latest)
+#     seen = set()
+#     unique_reports = []
+#     for r in reversed(reports):  # Newest first
+#         img_url = r.get('image_url', '')
+#         if img_url not in seen:
+#             seen.add(img_url)
+#             unique_reports.append(r)
+    
+#     reports = unique_reports[-50:]  # Last 50 unique
+    
+#     # ✅ YOUR ORIGINAL PROCESSING CODE (unchanged)
+#     reported_table = []
+#     for r in reports:
+#         created_at_raw = r.get('created_at')
+        
+#         if isinstance(created_at_raw, str):
+#             try:
+#                 created_at = datetime.fromisoformat(created_at_raw.replace('Z', '+00:00'))
+#             except:
+#                 created_at = datetime.now()
+#         else:
+#             created_at = created_at_raw or datetime.now()
+        
+#         reported_table.append({
+#             "image_url": r.get("image_url", "/static/pothole_sample.jpg"),
+#             "date": created_at.strftime("%d/%m/%Y"),
+#             "time": created_at.strftime("%H:%M"),
+#             "place_name": r.get("place_name", "Unknown"),
+#             "lat": r.get("lat", 0),
+#             "lon": r.get("lon", 0),
+#             "severity": r.get("severity", "Medium"),
+#             "pothole_count": r.get("pothole_count", 0),
+#             "total_volume_cm3": r.get("total_volume_cm3", 0),
+#             "total_cost_min": r.get("total_cost_min", 0),
+#             "total_cost_max": r.get("total_cost_max", 0),
+#             "total_time_min": r.get("total_time_min", 0),
+#             "bboxes": r.get("bboxes", [])
+#         })
+    
+#     # ✅ YOUR ORIGINAL CALCULATIONS (unchanged)
+#     total_potholes = sum(r.get('pothole_count', 0) for r in reported_table)
+#     total_volume = sum(r.get('total_volume_cm3', 0) for r in reported_table)
+    
+#     auto_data = {
+#         'pothole_type': 'Medium',
+#         'total_potholes': total_potholes,
+#         'avg_volume_cm3': total_volume / max(1, total_potholes) if total_potholes > 0 else 0,
+#         'total_volume_cm3': total_volume,
+#         'total_cost_min': f"₹{total_volume * 0.0003:.0f}",
+#         'total_cost_max': f"₹{total_volume * 0.0005:.0f}",
+#         'total_time_min': total_potholes * 15,
+#         'time_per_pothole_min': 15,
+#         'cost_per_pothole_min': f"₹{total_volume * 0.0003 / max(1, total_potholes):.0f}",
+#         'cost_per_pothole_max': f"₹{total_volume * 0.0005 / max(1, total_potholes):.0f}"
+#     }
+    
+#     return render_template('recommendation.html',
+#                            user_name=user_name,
+#                            auto=auto_data,
+#                            reported_table=reported_table)
+
+
 
 @app.route('/recommendations')
 def recommendations():
     user_name = session.get("user_name", "Guest")
     
-    # ✅ YOUR EXISTING GLOBAL DATA
-    reports = globals().get('recommendation_reports', [])
+    # ✅ Get data from MongoDB OR create demo data if empty
+    reports = []
     
-    # ✅ FIXED: Handle string dates properly
+    try:
+        from pymongo import MongoClient
+        client = MongoClient('mongodb://localhost:27017/')
+        db = client['pothole_app']
+        
+        # Try to get real reports
+        reports = list(db.pothole_reports.find().sort("created_at", -1).limit(50))
+        print(f"Found {len(reports)} MongoDB reports")  # Debug
+        
+        client.close()
+    except Exception as e:
+        print(f"MongoDB error: {e}")
+    
+    # ✅ If NO data anywhere, create DEMO data so table never empty
+    if not reports:
+        reports = [{
+            "image_url": "/static/pothole_sample.jpg",
+            "created_at": "2026-01-23T12:00:00",
+            "place_name": "MG Road, Hyderabad",
+            "lat": 17.3850,
+            "lon": 78.4867,
+            "severity": "Medium",
+            "pothole_count": 2,
+            "total_volume_cm3": 12500,
+            "total_cost_min": 3750,
+            "total_cost_max": 6250,
+            "total_time_min": 30,
+            "bboxes": []
+        }]
+        print("Using demo data - no real reports found")
+    
+    # ✅ YOUR ORIGINAL PROCESSING (unchanged)
     reported_table = []
-    for r in reports[-50:][::-1]:  # Last 50 reports
+    for r in reports[-50:][::-1]:
         created_at_raw = r.get('created_at')
         
-        # ✅ FIX: Convert string to datetime OR use now
         if isinstance(created_at_raw, str):
             try:
                 created_at = datetime.fromisoformat(created_at_raw.replace('Z', '+00:00'))
@@ -561,8 +685,8 @@ def recommendations():
         
         reported_table.append({
             "image_url": r.get("image_url", "/static/pothole_sample.jpg"),
-            "date": created_at.strftime("%d/%m/%Y"),           # ✅ 22/01/2026
-            "time": created_at.strftime("%H:%M"),              # ✅ 17:54
+            "date": created_at.strftime("%d/%m/%Y"),
+            "time": created_at.strftime("%H:%M"),
             "place_name": r.get("place_name", "Unknown"),
             "lat": r.get("lat", 0),
             "lon": r.get("lon", 0),
@@ -575,7 +699,7 @@ def recommendations():
             "bboxes": r.get("bboxes", [])
         })
     
-    # ✅ Your existing calculations
+    # ✅ YOUR ORIGINAL CALCULATIONS
     total_potholes = sum(r.get('pothole_count', 0) for r in reported_table)
     total_volume = sum(r.get('total_volume_cm3', 0) for r in reported_table)
     
@@ -593,9 +717,10 @@ def recommendations():
     }
     
     return render_template('recommendation.html',
-                         user_name=user_name,
-                         auto=auto_data,
-                         reported_table=reported_table)
+                           user_name=user_name,
+                           auto=auto_data,
+                           reported_table=reported_table)
+
 
 
 
@@ -686,7 +811,7 @@ def dashboard():
         bgr = None
         filename = None
 
-        # === ORIGINAL WORKING CAMERA/UPLOAD CODE (no comments-only blocks) ===
+        # === ORIGINAL WORKING CAMERA/UPLOAD CODE ===
         if input_type == "camera":
             camera_data = request.form.get("camera_image")
             if not camera_data:
@@ -784,20 +909,24 @@ def dashboard():
                     'report_id': str(report_id)
                 }
 
-                # if 'recommendation_reports' not in globals():
-                #     globals()['recommendation_reports'] = []
-                # globals()['recommendation_reports'].append(recommendation_report)
-
-                # flash(f'✅ {len(pothole_rows)} potholes detected & saved to recommendations!', "success")
-
-                # ✅ PERMANENT STORAGE
+                # ✅ FIXED: Save to file + MongoDB + globals
                 reports = load_reports()
                 reports.append(recommendation_report)
                 save_reports(reports)
-                globals()['recommendation_reports'] = reports  # Keep for compatibility
+                globals()['recommendation_reports'] = reports
+                
+                # 🔥 MONGODB PERMANENT STORAGE
+                try:
+                    from pymongo import MongoClient
+                    client = MongoClient('mongodb://localhost:27017/')
+                    db = client['pothole_app']
+                    db.pothole_reports.insert_one(recommendation_report)
+                    print("✅ SAVED TO MONGODB FROM DASHBOARD!")
+                    client.close()
+                except Exception as e:
+                    print(f"MongoDB error: {e}")
 
                 flash(f'✅ {len(pothole_rows)} potholes detected & saved to recommendations!', "success")
-
 
             # your existing alerts_enabled / flash logic here
 
@@ -808,9 +937,7 @@ def dashboard():
         annotated_image=annotated_rel_path
     )
 
-
-# ---------------- RECOMMENDATION PAGE (UPDATED) ----------------
-
+# ---------------- FIXED SAVE DETECTION ROUTE ----------------
 @app.route('/save_detection', methods=['POST'])
 def save_detection():
     address = request.form.get('address', 'Vepagunta Road')
@@ -833,15 +960,27 @@ def save_detection():
     }
     
     # Add to global list
-    if 'pothole_reports' not in globals():
-        globals()['pothole_reports'] = []
-    globals()['pothole_reports'].append(new_report)
+    if 'recommendation_reports' not in globals():
+        globals()['recommendation_reports'] = []
+    globals()['recommendation_reports'].append(new_report)
+    
+    # 🔥 MONGODB PERMANENT STORAGE
+    try:
+        from pymongo import MongoClient
+        client = MongoClient('mongodb://localhost:27017/')
+        db = client['pothole_app']
+        db.pothole_reports.insert_one(new_report)
+        print("✅ SAVED /save_detection TO MONGODB!")
+        client.close()
+    except Exception as e:
+        print(f"MongoDB save_detection error: {e}")
     
     return jsonify({
         'success': True,
         'potholes': potholes,
         'address': address
     })
+
 
 
 # ---------------- MAP (ONLY REPORTED + ROUTE) ----------------

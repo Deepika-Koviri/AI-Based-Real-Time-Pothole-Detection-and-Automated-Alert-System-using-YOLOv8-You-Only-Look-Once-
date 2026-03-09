@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Based Pothole Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #F4FAF9 0%, #E8F8F6 100%);
+      color: #1b1c1e;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-icon {
+      height: 60px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    .logo-text h2 {
+      margin: 0;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .logo-text span {
+      color: #00E5A8;
+    }
+
+    .logo-text p {
+      margin: 0;
+      font-size: 0.7rem;
+      color: #d1f5ee;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+      background: #0A3D62;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    nav h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li {
+      cursor: pointer;
+      font-weight: 600;
+      color: #0A3D62;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+
+    nav ul li:hover {
+      color: #0A3D62;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #0FB9B1;
+    }
+
+    nav ul li a.active {
+      color: #0FB9B1;
+      border-bottom: 2px solid #0FB9B1;
+      padding-bottom: 4px;
+    }
+
+
+    .nav-btn {
+      background: #0FB9B1;
+      color: white;
+      padding: 12px 26px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      font-family: 'Poppins', sans-serif;
+      transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+      background: #0FB9B1;
+      transform: scale(1.05);
+    }
+
+    
+    .flash-container {
+      position: fixed;
+      top: 110px; 
+      right: 20px;
+      z-index: 9998;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .flash {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-left: 6px solid #0FB9B1;
+      padding: 12px 16px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      font-size: 14px;
+      color: #111827;
+      min-width: 300px;
+      max-width: 400px;
+      animation: slideInRight 0.3s ease;
+    }
+
+    .flash.success { border-left-color: #10b981; }
+    .flash.danger { border-left-color: #ef4444; }
+    .flash.warning { border-left-color: #f59e0b; }
+    .flash.info { border-left-color: #3b82f6; }
+
+    @keyframes slideInRight {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    main, .dash-page, .main-content {
+      margin-top: 20px !important;
+      min-height: calc(100vh - 120px);
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 15px 5% !important; }
+      nav ul { gap: 15px !important; }
+      nav ul li { font-size: 0.85rem !important; }
+      .nav-btn { 
+          padding: 10px 20px !important; 
+          font-size: 0.85rem !important; 
+      }
+      /* body { padding-top: 80px !important; } */
+      .flash-container { top: 95px; right: 15px; }
+      .flash { min-width: 280px; font-size: 13px; }
+    }
+
+
+    .menu-toggle{
+      display:none;
+      font-size:26px;
+      color:white;
+      cursor:pointer;
+    }
+
+    /* Mobile Navbar */
+    @media (max-width:768px){
+
+      .menu-toggle{
+        display:block;
+      }
+
+      nav{
+        position:relative;
+      }
+
+      nav ul{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#0A3D62;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:25px 0;
+        display:none;
+        max-height:80vh;
+        overflow-y:auto;
+      }
+
+      nav ul.active{
+        display:flex;
+      }
+
+      nav ul li{
+        font-size:1rem;
+      }
+
+      .nav-btn{
+        display:none;
+      }
+      .nav-btn.logout-desktop{
+        text-decoration: none;
+        display:none;
+      }
+      .nav-btn.logout-desktop.active{
+  border-bottom:none;
+}
+
+      .mobile-logout{
+        display:flex !important;
+        justify-content:center;
+        margin-top:15px;
+        width:100%;
+      }
+    }
+
+    .logout-mobile{
+  background:#00E5A8;
+  color:#0A3D62;
+  padding:10px 22px;
+  border-radius:25px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.logout-mobile:hover{
+  background:#0FB9B1;
+  color:white;
+}
+/* Hide mobile logout on desktop */
+.mobile-logout{
+display:none;
+}
+
+.logout-desktop{
+  text-decoration:none !important;
+  border-bottom:none !important;
+}
+  </style>
+  {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+  <nav>
+
+  <div class="logo">
+      <img src="{{ url_for('static', filename='logo1.png') }}" class="logo-icon">
+      <div class="logo-text">
+          <h2>POTHOLE<span>AI</span></h2>
+          <p>Smart Roads. Safer Cities.</p>
+      </div>
+  </div>
+
+  <!-- Hamburger -->
+  <div class="menu-toggle" id="menu-toggle">
+      <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul id="nav-links">
+
+      <li><a href="{{ url_for('index') }}">Home</a></li>
+      <li><a href="{{ url_for('dashboard') }}">Upload</a></li>
+      <li><a href="{{ url_for('pothole_map') }}">Maps</a></li>
+
+      {% if 'user_email' in session %}
+          {% if session.get('is_admin') %}
+              <li><a href="{{ url_for('recommendations') }}">Recommendations</a></li>
+              <li><a href="{{ url_for('alerts') }}">Alerts</a></li>
+          {% endif %}
+      {% endif %}
+
+      <li><a href="{{ url_for('blog') }}">Blogs</a></li>
+      <li><a href="{{ url_for('about') }}">About Us</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact</a></li>
+
+      <!-- Mobile Logout -->
+      {% if 'user_email' in session %}
+      <li class="mobile-logout">
+          <a href="{{ url_for('logout') }}" class="logout-mobile">Logout</a>
+      </li>
+      {% endif %}
+
+  </ul>
+
+  <!-- Desktop Button -->
+  {% if 'user_email' not in session %}
+      <a href="{{ url_for('auth') }}" class="nav-btn">Sign up/Login</a>
+  {% else %}
+      <a href="{{ url_for('logout') }}" class="nav-btn logout-desktop">Logout</a>
+  {% endif %}
+
+</nav>
+
+
+  <div class="flash-container">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="flash {{ category }}">{{ message }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+  </div>
+
+  {% block content %}{% endblock %}
+
+  <div class="auth-modal" id="loginModal" style="display: none;">
+    <div class="auth-card" style="
+        position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: min(420px, 95vw); background: #fff; border-radius: 18px;
+        padding: 24px; box-shadow: 0 25px 70px rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0.1); z-index: 10000;
+        backdrop-filter: blur(20px); max-height: 90vh; overflow-y: auto;
+    ">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <h3 style="margin: 0; font-size: 1.3rem; color: #111827;">Login</h3>
+        <button onclick="closeAuthModal('loginModal')" style="
+            border: none; background: none; font-size: 24px; cursor: pointer; color: #6b7280;
+        ">&times;</button>
+      </div>
+      
+      <button onclick="switchToSignup()" style="
+          width: 100%; margin-top: 12px; padding: 12px; border: 1px solid #d1d5db;
+          background: white; border-radius: 12px; font-weight: 600; cursor: pointer;
+      ">Create new account</button>
+    </div>
+  </div>
+
+  <div id="modalBackdrop" style="
+      position: fixed; inset: 0; background: rgba(0,0,0,0.5);
+      display: none; z-index: 9999; backdrop-filter: blur(5px);
+  " onclick="closeAllModals()"></div>
+
+  <script>
+    function openLoginModal() {
+      document.getElementById('loginModal').style.display = 'block';
+      document.getElementById('modalBackdrop').style.display = 'block';
+    }
+
+    function closeAuthModal(id) {
+      document.getElementById(id).style.display = 'none';
+      document.getElementById('modalBackdrop').style.display = 'none';
+    }
+
+    function switchToSignup() {
+      closeAuthModal('loginModal');
+    }
+
+    function closeAllModals() {
+      closeAuthModal('loginModal');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeAllModals();
+    });
+
+    window.addEventListener('load', () => {
+      const url = new URL(window.location.href);
+      if (url.searchParams.get('modal') === 'login') {
+        openLoginModal();
+        url.searchParams.delete('modal');
+        window.history.replaceState({}, '', url.toString());
+      }
+    });
+  </script>
+  <script>
+const publicVapidKey = '{{ config.get("VAPID_PUBLIC_KEY") }}';
+
+if ('serviceWorker' in navigator && 'PushManager' in window) {
+  navigator.serviceWorker.register('/static/sw.js')
+    .then(registration => {
+      console.log('✅ Service Worker registered');
+      subscribeUser(registration);
+    })
+    .catch(err => console.log('❌ SW registration failed:', err));
+}
+
+async function subscribeUser(registration) {
+  try {
+    const subscription = await registration.pushManager.subscribe({
+      userVisibleOnly: true,
+      applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
+    });
+    
+    await fetch('/api/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        subscription: subscription,
+        user_email: '{{ session.get("user_email", "") }}'
+      })
+    });
+    console.log('✅ Subscribed to push notifications');
+  } catch (err) {
+    console.error('❌ Subscription failed:', err);
+  }
+}
+
+function urlBase64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
+  const rawData = window.atob(base64);
+  return Uint8Array.from([...rawData].map(char => char.charCodeAt(0)));
+}
+</script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "fd315567-2a7f-46ef-a05e-b5c30469afc4",
+    });
+  });
+</script>
+<!-- <script>
+const navLinks = document.querySelectorAll("nav ul li a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+        navLinks.forEach(nav => nav.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
+const currentLocation = window.location.href;
+navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+        link.classList.add("active");
+    }
+});
+</script> -->
+<script>
+  const navLinks = document.querySelectorAll("nav ul li a:not(.logout-mobile)");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+        navLinks.forEach(nav => nav.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
+const currentLocation = window.location.href;
+navLinks.forEach(link => {
+    if (link.href === currentLocation) {
+        link.classList.add("active");
+    }
+});
+</script>
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const mobileMenu = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

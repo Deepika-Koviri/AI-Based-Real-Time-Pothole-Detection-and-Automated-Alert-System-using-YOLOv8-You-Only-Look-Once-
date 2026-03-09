@@ -1,0 +1,380 @@
+{% extends "base.html" %}
+
+{% block title %}PotholeAI Blogs{% endblock %}
+
+{% block extra_css %}
+<style>
+
+.blog-page {
+    background: linear-gradient(135deg, #e0f2fe 0%, #f8fafc 100%);
+    min-height: 100vh;
+}
+
+.blog-page .blog-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 30px 20px;
+}
+
+.blog-page .blog-container h1 {
+    text-align: center;
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    margin-bottom: 70px;
+    color: #0A3D62;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.blog-page .blog-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.blog-page .blog-card {
+    background: white;
+    flex: 1 1 320px;
+    max-width: 360px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    transition: all 0.4s ease;
+}
+
+.blog-page .blog-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 35px 70px rgba(0,0,0,0.25);
+}
+
+.blog-page .blog-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.blog-page .blog-content {
+    padding: 28px;
+}
+
+.blog-page .blog-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.blog-page .blog-meta {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin: 15px 0;
+}
+
+.blog-page .blog-card p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+.blog-page .read-btn {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #0A3D62, #1d4ed8);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-page .read-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(37,99,235,0.4);
+}
+
+.blog-page .detail-page {
+    display: none;
+    max-width: 950px;
+    margin: 60px auto;
+    padding: 55px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.18);
+    line-height: 1.75;
+}
+
+.blog-page .detail-page img {
+    width: 100%;
+    border-radius: 16px;
+    margin: 35px 0;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+}
+
+.blog-page .detail-page h2 {
+    font-size: 2.8rem;
+    color: #1e3a8a;
+    margin-bottom: 30px;
+}
+
+.blog-page .section-title {
+    font-size: 1.8rem;
+    margin: 45px 0 25px 0;
+    color: #1e40af;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #e0f2fe;
+}
+
+.blog-page .highlight {
+    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+    padding: 28px;
+    border-left: 8px solid #0284c7;
+    border-radius: 16px;
+    margin: 30px 0;
+}
+
+.blog-page .back-btn {
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #1f2937, #374151);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 40px;
+}
+
+.blog-page .back-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(31,41,55,0.4);
+}
+
+.blog-page .write-blog-section {
+    margin-top: 100px;
+    background: white;
+    padding: 60px;
+    border-radius: 24px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-page .write-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.blog-page .write-subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 50px;
+}
+
+.blog-page .blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blog-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-page .form-group label {
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1e40af;
+}
+
+.blog-page .form-group input,
+.blog-page .form-group textarea {
+    padding: 18px 20px;
+    border-radius: 14px;
+    border: 2px solid #e2e8f0;
+    font-size: 1rem;
+    transition: all 0.3s;
+    background: #fafbfc;
+}
+
+.blog-page .form-group textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.blog-page .form-group input:focus,
+.blog-page .form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37,99,235,0.15);
+    background: white;
+}
+
+.blog-page .submit-btn {
+    padding: 20px;
+    background: linear-gradient(135deg, #0A3D62, #1e40af);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.blog-page .submit-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(37,99,235,0.4);
+}
+
+@media (max-width: 768px) {
+    .blog-page .blog-container {
+        padding: 40px 15px;
+    }
+
+    .blog-page .write-blog-section {
+        padding: 40px 20px;
+    }
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="blog-page">
+    <div class="blog-container" id="mainPage">
+            <h1>🚀 PotholeAI Insights Hub</h1>
+
+    <div class="blog-wrapper">
+        <div class="blog-card">
+            <img src="{{ url_for('static', filename='1.jpeg') }}" alt="YOLO Detection">
+            <div class="blog-content">
+                <div class="blog-title">AI-Based Pothole Detection Using YOLO</div>
+                <div class="blog-meta">Feb 20, 2026 • 10 min read</div>
+                <p>Advanced deep learning techniques for automatic pothole identification with 95% accuracy.</p>
+                <button class="read-btn" onclick="openBlog('blog1')">Read Full Article</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" alt="Road Monitoring">
+            <div class="blog-content">
+                <div class="blog-title">Real-Time Road Damage Monitoring</div>
+                <div class="blog-meta">Feb 18, 2026 • 9 min read</div>
+                <p>Live road inspection using AI cameras, GPS tracking, and cloud alerts.</p>
+                <button class="read-btn" onclick="openBlog('blog2')">Read Full Article</button>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="{{ url_for('static', filename='3.jpeg') }}" alt="Smart Infrastructure">
+            <div class="blog-content">
+                <div class="blog-title">Smart Infrastructure with AI</div>
+                <div class="blog-meta">Feb 15, 2026 • 9 min read</div>
+                <p>IoT sensors, edge computing, and 5G for future-ready transportation networks.</p>
+                <button class="read-btn" onclick="openBlog('blog3')">Read Full Article</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="write-blog-section">
+        <h2 class="write-title">✍️ Share Your Blog with PotholeAI</h2>
+        <p class="write-subtitle">Contribute your ideas, research, or innovations related to AI & smart infrastructure.</p>
+        
+        <form class="blog-form" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Blog Title</label>
+                <input type="text" name="title" required>
+            </div>
+            <div class="form-group">
+                <label>Sub Title</label>
+                <input type="text" name="subtitle" required>
+            </div>
+            <div class="form-group">
+                <label>Blog Content</label>
+                <textarea name="content" rows="6" required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Upload Image</label>
+                <input type="file" name="image" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label>Reference Link (Optional)</label>
+                <input type="url" name="link">
+            </div>
+            <button type="submit" class="submit-btn">Publish Blog</button>
+        </form>
+    </div>
+</div>
+
+<div class="detail-page" id="blog1">
+    <h2>AI-Based Pothole Detection Using YOLO</h2>
+    <img src="{{ url_for('static', filename='1.jpeg') }}" alt="YOLO Detection">
+    <p>Road potholes cause vehicle damage, traffic congestion, and accidents. Manual inspections are slow and expensive. AI automates road monitoring.</p>
+    <p>YOLO processes entire images in one pass, making it perfect for real-time detection from vehicle cameras.</p>
+    <div class="section-title">How It Works</div>
+    <p>Camera → AI Detection → GPS Location → Cloud Alert. 95% accuracy in live conditions.</p>
+    <div class="highlight">
+        ✔ Real-time detection<br>
+        ✔ 95% accuracy<br>
+        ✔ GPS integration<br>
+        ✔ Cloud alerts
+    </div>
+    <button class="back-btn" onclick="goBack()">← Back to Blogs</button>
+</div>
+
+<div class="detail-page" id="blog2">
+    <h2>Real-Time Road Damage Monitoring</h2>
+    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80" alt="Road Monitoring">
+    <p>AI + GPS + Cloud = Smart road management. No more manual surveys.</p>
+    <p>Detections → GPS coordinates → Cloud dashboard → Fast repairs.</p>
+    <div class="section-title">Key Components</div>
+    <p>• AI Detection • GPS Tracking • Cloud Analytics • Real-time Alerts</p>
+    <div class="highlight">
+        📍 GPS Mapping<br>
+        ☁️ Cloud Storage<br>
+        🚀 Fast Repairs
+    </div>
+    <button class="back-btn" onclick="goBack()">← Back to Blogs</button>
+</div>
+
+<div class="detail-page" id="blog3">
+    <h2>Smart Infrastructure with AI</h2>
+    <img src="{{ url_for('static', filename='3.jpeg') }}" alt="Smart Infrastructure">
+    <p>AI transforms roads with sensors, IoT, edge computing, and 5G.</p>
+    <p>PotholeAI uses real-time processing for proactive maintenance.</p>
+    <div class="section-title">Future Vision</div>
+    <p>• Drones • Autonomous Vehicles • Predictive Maintenance</p>
+    <div class="highlight">
+        🚗 Self-driving cars<br>
+        📡 IoT Networks<br>
+        ⚡ Predictive fixes
+    </div>
+    <button class="back-btn" onclick="goBack()">← Back to Blogs</button>
+</div>
+</div>
+<script>
+function openBlog(id) {
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById(id).style.display = "block";
+    window.scrollTo(0, 0);
+}
+function goBack() {
+    document.querySelectorAll(".detail-page").forEach(page => {
+        page.style.display = "none";
+    });
+    document.getElementById("mainPage").style.display = "block";
+    window.scrollTo(0, 0);
+}
+</script>
+{% endblock %}

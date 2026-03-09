@@ -1,0 +1,300 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #F4FAF9 0%, #E8F8F6 100%);
+        color: #1b1c1e;
+    }
+
+    .about-hero {
+        padding: 40px 8% 100px;
+        text-align: center;
+        color: white;
+        background: linear-gradient(135deg, #0A3D62 0%, #0FB9B1 100%);
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="25" cy="25" r="3" fill="%23ffffff" opacity="0.3"><animate attributeName="cy" values="25;75;25" dur="3s" repeatCount="indefinite"/></circle><circle cx="75" cy="75" r="2" fill="%2300E5A8" opacity="0.4"><animate attributeName="cy" values="75;25;75" dur="4s" repeatCount="indefinite"/></circle></svg>');
+    animation: float 25s ease-in-out infinite;
+    opacity: 0.2;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-15px) rotate(120deg); }
+    66% { transform: translateY(10px) rotate(240deg); }
+}
+
+    .about-hero-content {
+        max-width: 100%;
+        margin: 0 auto;
+        position: relative;
+    z-index: 2;
+    }
+
+    .about-hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .about-hero p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        text-align: justify;
+        opacity: 0.95;
+    }
+
+    .about-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 40px;
+        margin: 60px 0;
+    }
+
+    .about-card {
+        background: white;
+        padding: 40px;
+        border-radius: 24px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        border: 1px solid rgba(0,0,0,0.05);
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .about-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #0A3D62, #0FB9B1);
+    }
+
+    .about-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    }
+
+    .about-card h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #0A3D62;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .about-card p {
+        color: #555;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    .team-section {
+        text-align: center;
+        padding: 80px 8%;
+        background: linear-gradient(135deg, #F4FAF9 0%, #E8F8F6 100%);
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .team-card {
+        background: white;
+        padding: 40px 30px;
+        border-radius: 24px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+        transition: all 0.4s ease;
+    }
+
+    .team-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+    }
+
+    .team-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #0A3D62, #0FB9B1);
+        margin: 0 auto 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+
+    .cta-section {
+        padding: 80px 8%;
+        text-align: center;
+        background: linear-gradient(135deg, #0A3D62 0%, #0FB9B1 100%);
+        color: white;
+        margin: 80px 8% 40px;
+        border-radius: 24px;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        background: white;
+        color: #0A3D62;
+        padding: 16px 40px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        margin: 20px 10px 0;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+    }
+
+    .cta-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 40px rgba(255,255,255,0.4);
+    }
+
+    @media (max-width: 768px) {
+        nav ul { gap: 15px; }
+        .about-hero h1 { font-size: 2.2rem; }
+        .about-content { padding: 40px 5%; }
+    }
+</style>
+
+<section class="about-hero">
+    <div class="about-hero-content">
+        <h1>About PotholeAI</h1>
+        <p>
+            PotholeAI is an intelligent road monitoring and hazard detection system developed to address one of the most common yet dangerous infrastructure problems faced by cities worldwide — potholes. Road damage is not just an inconvenience; it is a serious public safety issue that leads to accidents, vehicle damage, traffic congestion, and increased maintenance costs. PotholeAI was created with the vision of transforming traditional road inspection methods into a smart, automated, and data-driven solution. Instead of relying solely on manual inspections or citizen complaints, our system leverages advanced computer vision technology to detect potholes accurately and efficiently from images and real-time inputs.
+
+            The project was developed to bridge the gap between technology and public infrastructure management. Using the YOLOv8 deep learning model, PotholeAI analyzes road surface images to identify potholes and classify them based on severity. It calculates essential parameters such as size, depth estimation, and surface impact to determine how critical the damage is. This allows municipal authorities and road maintenance departments to prioritize repairs effectively, ensuring that the most hazardous locations are addressed first. By integrating intelligent detection with automated alerts, the system reduces response time and helps prevent accidents before they occur.
+
+            PotholeAI is designed for use by city administrators, municipal corporations, smart city planners, and even individual users who want to contribute to safer roads. The platform includes features such as image upload detection, interactive mapping of damaged locations, real-time alerts, and data analytics for long-term infrastructure planning. It can be deployed in urban environments, highways, and developing regions where road monitoring resources are limited.
+
+            The system works by capturing road images through cameras or user uploads, processing them through a trained AI model, and generating detection outputs with bounding boxes and severity labels. The results are then stored in a centralized database and visualized on maps for better decision-making. Notifications can be sent instantly to concerned authorities, enabling quick action.
+
+            Ultimately, PotholeAI represents a step toward smarter, safer, and more sustainable cities. By combining artificial intelligence with civic responsibility, the project aims to reduce accidents, lower maintenance costs, and improve overall transportation safety for communities everywhere.
+        </p>
+    </div>
+</section>
+
+
+<div class="about-content">
+    <div class="about-grid">
+        <div class="about-card">
+            <h3>🚀 Our Mission</h3>
+            <p>
+                PotholeAI is an AI-powered smart road monitoring system designed to 
+                reduce road accidents and improve public safety. Every pothole detected 
+                is one less accident waiting to happen.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>🤖 Advanced Technology</h3>
+            <p>
+                Using cutting-edge YOLOv8 computer vision technology, our system detects 
+                potholes from uploaded road images and calculates precise parameters 
+                including depth, width, volume, and severity level.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>⚡ Instant Action</h3>
+            <p>
+                Detected potholes are automatically marked on interactive maps with 
+                instant alerts sent to municipal authorities and nearby users through 
+                email, SMS, and push notifications.
+            </p>
+        </div>
+    </div>
+</div>
+
+<section class="team-section">
+    <h2 style="font-size: 2.5rem; font-weight: 700; color: #0A3D62; margin-bottom: 20px;">
+        Meet Our Team
+    </h2>
+    <p style="color: #666; font-size: 1.1rem; max-width: 600px; margin: 0 auto 60px;">
+        Passionate developers and AI experts building safer roads
+    </p>
+    
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-avatar">👩‍💻</div>
+            <h3>Your Name</h3>
+            <p style="color: #0A3D62; font-weight: 600;">Lead AI Developer</p>
+            <p>YOLOv8 model training, pothole analytics, and backend architecture.</p>
+        </div>
+        
+        <div class="team-card">
+            <div class="team-avatar">🎨</div>
+            <h3>UI/UX Designer</h3>
+            <p style="color: #0A3D62; font-weight: 600;">Frontend Specialist</p>
+            <p>Dashboard design, camera integration, and real-time notifications.</p>
+        </div>
+        
+        <div class="team-card">
+            <div class="team-avatar">🛠️</div>
+            <h3>DevOps Engineer</h3>
+            <p style="color: #0A3D62; font-weight: 600;">System Architect</p>
+            <p>Push notifications, database optimization, maps integration.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 20px;">
+        Ready to Make Roads Safer?
+    </h2>
+    <p style="font-size: 1.2rem; margin-bottom: 40px; opacity: 0.95;">
+        Join thousands of users helping build smarter cities.
+    </p>
+    <a href="http://127.0.0.1:5000/dashboard" class="cta-btn">🚀 Try Dashboard</a>
+    <a href="http://127.0.0.1:5000/auth" class="cta-btn">Sign Up Free</a>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        once: true
+    });
+
+    document.querySelectorAll("nav ul li a").forEach(link => {
+        link.addEventListener("click", function () {
+            document.querySelectorAll("nav ul li a").forEach(nav => nav.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+</script>
+{% endblock %}

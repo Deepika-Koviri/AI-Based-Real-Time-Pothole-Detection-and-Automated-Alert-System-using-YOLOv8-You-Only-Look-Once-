@@ -1,0 +1,448 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="alerts-dashboard">
+  <!-- Header & LIVE Stats -->
+  <div class="dashboard-header">
+    <h1>🔔 <strong>Alerts Analytics Dashboard</strong></h1>
+    <div class="stats-row">
+      <div class="stat-box live-stat" data-type="total_reports">
+        <h3 id="total-reports">{{ analytics.total_reports|default(0) }}</h3>
+        <p>Total Alerts</p>
+      </div>
+      <div class="stat-box live-stat" data-type="total_potholes">
+        <h3 id="total-potholes">{{ analytics.total_potholes|default(0) }}</h3>
+        <p>Total Potholes</p>
+      </div>
+      <div class="stat-box live-stat" data-type="total_emails">
+        <h3 id="total-emails">{{ analytics.total_emails|default(0) }}</h3>
+        <p>Email Alerts Sent</p>
+      </div>
+      <!-- <div class="stat-box live-stat" data-type="total_sms">
+        <h3 id="total-sms">{{ analytics.total_sms|default(0) }}</h3>
+        <p>In Progress</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Charts Row -->
+  <!-- <div class="charts-row">
+    <div class="chart-card">
+      <h3>🚨 Severity Breakdown</h3>
+      <canvas id="severityChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>📊 Alert Status</h3>
+      <canvas id="statusChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>📱 Notifications</h3>
+      <canvas id="notificationChart"></canvas>
+    </div>
+  </div> -->
+
+  <!-- 🔍 SEARCH BAR - ADD THIS -->
+<!-- <div class="search-section">
+  <div class="search-container">
+    <input type="text" id="potholeSearch" class="form-control search-input" 
+           placeholder="🔍 Search by Pothole ID (e.g., ID12345)" autocomplete="off">
+    <div class="search-results" id="searchResults">
+      <span id="searchCount">Showing all {{ alerts|length }} alerts</span>
+    </div>
+  </div>
+</div> -->
+<!-- END SEARCH BAR -->
+
+
+
+  <!-- NEW ENHANCED TABLE -->
+  <div class="table-section">
+  <!-- 🔥 SEARCH BAR - RIGHT CORNER -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding: 20px 0;">
+    <h3>📋 Recent Alerts <span class="badge bg-primary">{{ alerts|length }}</span></h3>
+    
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <input type="text" id="potholeSearch" class="form-control search-input" 
+             placeholder="🔍 Search Pothole ID..." autocomplete="off"
+             style="width: 300px; padding: 10px 15px;">
+      <span id="searchCount" style="color: #6c757d; font-weight: 500; white-space: nowrap;">
+        Showing {{ alerts|length }} alerts
+      </span>
+    </div>
+  </div>
+  
+  <div class="table-responsive">
+
+      <table class="table table-striped table-hover table-sm">
+        <thead class="table-dark">
+          <tr>
+            <th style="width: 70px;">ID</th>
+            <th style="width: 70px;">Image</th>
+            <th style="width: 80px;">Date</th>
+            <th style="width: 70px;">Time</th>
+            <th style="width: 200px;">Location</th>
+            <th style="width: 70px;">Lat</th>
+            <th style="width: 70px;">Lon</th>
+            <th style="width: 90px;">Severity</th>
+            <th style="width: 70px;">Potholes</th>
+            <th style="width: 70px;">Depth</th>
+            <th style="width: 70px;">Width</th>
+            <th style="width: 120px;">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for alert in alerts %}
+          <tr data-pothole-id="{{ alert.new_pothole_id }}">
+            <!-- Compact thumbnail -->
+            <!-- <td>{{ alert.pothole_id or 'N/A' }}</td>   -->
+            <td>{{ alert.new_pothole_id }}</td>
+            <td>
+              <img src="{{ alert.image_url }}" width="50" height="50" 
+                   class="img-thumbnail rounded" style="object-fit: cover;"
+                   alt="Pothole" onerror="this.src='/static/pothole_sample.jpg'">
+            </td>
+            
+            <!-- Date/Time -->
+            <td><strong>{{ alert.date }}</strong></td>
+            <td>{{ alert.time }}</td>
+            
+            <!-- Truncated Location (max 25 chars) -->
+            <td title="{{ alert.place_name }}">
+              {{ alert.place_name[:25] }}{% if alert.place_name|length > 25 %}...{% endif %}
+            </td>
+            
+            <!-- Coordinates -->
+            <td>{{ "%.4f"|format(alert.lat) }}</td>
+            <td>{{ "%.4f"|format(alert.lon) }}</td>
+            
+            <!-- Dynamic Severity Colors -->
+            <td>
+              {% if alert.severity == 'Small' %}
+                <span class="badge bg-success">Small</span>
+              {% elif alert.severity == 'Medium' %}
+                <span class="badge bg-warning text-dark">Medium</span>
+              {% elif alert.severity == 'Large' %}
+                <span class="badge bg-danger">Large</span>
+              {% else %}
+                <span class="badge bg-secondary">{{ alert.severity }}</span>
+              {% endif %}
+            </td>
+            
+            <!-- Pothole Count -->
+            <td><span class="badge bg-primary">{{ alert.pothole_count }}</span></td>
+            
+            <!-- MiDaS Depth/Width with colors -->
+            <td>
+              {% if alert.depth %}
+                <span class="badge bg-info" title="MiDaS Depth">
+                  {{ "%.2f"|format(alert.depth) }}m
+                </span>
+              {% else %}
+                <span class="badge bg-muted">N/A</span>
+              {% endif %}
+            </td>
+            <td>
+              {% if alert.width %}
+                <span class="badge bg-info" title="MiDaS Width">
+                  {{ "%.2f"|format(alert.width) }}m
+                </span>
+              {% else %}
+                <span class="badge bg-muted">N/A</span>
+              {% endif %}
+            </td>
+            
+            <!-- Status Dropdown -->
+            <td>
+              <select class="form-select form-select-sm status-select" 
+                      data-report-id="{{ alert.report_id or loop.index }}"
+                      style="max-width: 110px;">
+                <option value="sent" {% if alert.status == 'sent' %}selected{% endif %}>✅ Sent</option>
+                <option value="repaired" {% if alert.status == 'repaired' %}selected{% endif %}>✅ Repaired</option>
+                <option value="not-repaired" {% if alert.status == 'not-repaired' %}selected{% endif %}>❌ Not Repaired</option>
+                <option value="under-repair" {% if alert.status == 'under-repair' %}selected{% endif %}>⏳ Under Repair</option>
+              </select>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Status Update JS (ENHANCED) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const selects = document.querySelectorAll('.status-select');
+  
+  selects.forEach(select => {
+    select.addEventListener('change', function() {
+      const reportId = this.dataset.reportId;
+      const newStatus = this.value;
+      
+      // Visual feedback
+      this.classList.add('border-warning');
+      
+      // Update status via AJAX
+      fetch('/api/update_alert_status', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          report_id: reportId,
+          status: newStatus
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          this.classList.remove('border-warning');
+          this.classList.add('border-success');
+          setTimeout(() => {
+            this.classList.remove('border-success');
+          }, 1000);
+        } else {
+          this.classList.remove('border-warning');
+          this.classList.add('border-danger');
+          setTimeout(() => {
+            this.classList.remove('border-danger');
+          }, 1000);
+        }
+      })
+      .catch(() => {
+        this.classList.remove('border-warning');
+        alert('Update failed. Please try again.');
+      });
+    });
+  });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+let refreshInterval;
+let severityChart, statusChart, notificationChart;
+const analytics = {{ analytics|tojson|safe }};
+
+// 🔥 LIVE DASHBOARD UPDATE FUNCTION
+function updateLiveStats() {
+  fetch('/api/alerts-stats')
+    .then(r => r.json())
+    .then(data => {
+      console.log('🔄 LIVE ALERTS:', data);
+      
+      // Update stat boxes
+      document.getElementById('total-reports').textContent = data.total_reports;
+      document.getElementById('total-potholes').textContent = data.total_potholes;
+      document.getElementById('total-emails').textContent = data.total_emails;
+      document.getElementById('total-sms').textContent = data.total_sms;
+      
+      // Update charts LIVE
+      updateSeverityChart(data.severity_breakdown);
+      updateNotificationChart(data.total_emails, data.total_sms);
+    })
+    .catch(err => console.error('Stats update failed:', err));
+}
+
+// Chart update functions
+function updateSeverityChart(severityData) {
+  const ctx = document.getElementById('severityChart');
+  if (severityChart) severityChart.destroy();
+  
+  severityChart = new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: Object.keys(severityData),
+      datasets: [{ 
+        data: Object.values(severityData), 
+        backgroundColor: ['#28a745','#ffc107','#dc3545'],
+        borderWidth: 2
+      }]
+    },
+    options: { 
+      responsive: true, 
+      plugins: { legend: { position: 'bottom' } },
+      animation: { duration: 1000 }
+    }
+  });
+}
+
+function updateNotificationChart(emails, sms) {
+  const ctx = document.getElementById('notificationChart');
+  if (notificationChart) notificationChart.destroy();
+  
+  notificationChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Email', 'SMS', 'Push'],
+      datasets: [{ 
+        label: 'Sent', 
+        data: [emails, sms, 8], 
+        backgroundColor: ['#0FB9B1','#FF6B6B','#4ECDC4']
+      }]
+    },
+    options: { 
+      responsive: true, 
+      scales: { y: { beginAtZero: true } }, 
+      plugins: { legend: { display: false } },
+      animation: { duration: 1000 }
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initial charts
+  updateSeverityChart(analytics.severity_breakdown);
+  updateNotificationChart(analytics.total_emails, analytics.total_sms);
+  
+  // Status dropdowns
+  document.querySelectorAll('.status-select').forEach(select => {
+    select.addEventListener('change', function() {
+      fetch('/api/update_alert_status', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          report_id: this.dataset.reportId, 
+          status: this.value 
+        })
+      });
+    });
+  });
+  
+  // 🔥 START LIVE UPDATES every 3 seconds
+  updateLiveStats();
+  refreshInterval = setInterval(updateLiveStats, 3000);
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('potholeSearch');
+  const tableRows = document.querySelectorAll('tbody tr');
+  const searchCount = document.getElementById('searchCount');
+  
+  searchInput.addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase().trim();
+    let visibleCount = 0;
+    
+    tableRows.forEach(row => {
+      const potholeId = row.dataset.potholeId || row.cells[0].textContent;
+      
+      if (potholeId.toLowerCase().includes(searchTerm) || searchTerm === '') {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+    
+    searchCount.textContent = `Showing ${visibleCount} of ${tableRows.length} alerts`;
+  });
+});
+</script>
+
+
+<style>
+.alerts-dashboard { padding: 30px; max-width: 1600px; margin: 0 auto; }
+.stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 25px; margin: 30px 0; }
+.stat-box { 
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+  color: white; 
+  padding: 30px; 
+  border-radius: 20px; 
+  text-align: center; 
+  position: relative;
+  overflow: hidden;
+}
+.stat-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.stat-box.live-stat.updated::before {
+  opacity: 1;
+}
+.stat-box h3 { 
+  font-size: 2.5rem; 
+  font-weight: 800; 
+  margin: 0 0 10px 0; 
+  transition: all 0.5s ease;
+}
+.charts-row { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+  gap: 30px; 
+  margin-bottom: 40px; 
+}
+.chart-card { 
+  background: white; 
+  padding: 25px; 
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+.table-section { 
+  background: white; 
+  padding: 30px; 
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+.status-select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+.table-sm th, .table-sm td {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+.img-thumbnail {
+  border-radius: 6px !important;
+}
+.badge {
+  font-size: 0.75rem;
+}
+/* 🔍 SEARCH BAR STYLES */
+.search-section {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin: 30px 0;
+}
+
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-input {
+  font-size: 1.1rem;
+  padding: 15px 20px 15px 50px;
+  border: 2px solid #e9ecef;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+  width: 100%;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+  background: white;
+  transform: translateY(-2px);
+}
+
+.search-results {
+  margin-top: 12px;
+  text-align: center;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+#searchCount {
+  font-size: 0.95rem;
+}
+
+</style>
+{% endblock %}

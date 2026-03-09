@@ -1,0 +1,8 @@
+path: C:\Users\kovir\OneDrive\Desktop\FINAL YEAR PROJECT\reduced_dataset
+
+train: train/images
+val: valid/images
+
+nc: 1
+names:
+  0: pothole

@@ -51,6 +51,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       padding: 18px 8%;
       background: #0A3D62;
       backdrop-filter: blur(10px);
@@ -255,6 +256,194 @@ display:none;
   text-decoration:none !important;
   border-bottom:none !important;
 }
+
+/* Force mobile navbar when mobile preview is selected */
+
+body.mobile-view .menu-toggle{
+  display:block;
+}
+
+body.mobile-view nav ul{
+  position:absolute;
+  top:80px;
+  left:0;
+  width:100%;
+  background:#0A3D62;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+  padding:25px 0;
+  display:none;
+}
+/* Device Preview Simulation */
+
+body.desktop-view {
+  width: 100%;
+}
+
+body.tablet-view {
+  max-width: 768px;
+  margin: auto;
+}
+
+body.mobile-view {
+  max-width: 375px;
+  margin: auto;
+}
+
+body.mobile-view nav ul.active{
+  display:flex;
+}
+
+body.mobile-view .nav-btn{
+  display:none;
+}
+body.mobile-view nav ul{
+  display:none;
+}
+
+body.mobile-view nav ul.active{
+  display:flex;
+}
+
+
+
+#devicePreview{
+  /* position: fixed; */
+  padding:6px 10px;
+  border-radius:8px;
+  border:none;
+  font-family:'Poppins',sans-serif;
+  margin-right:20px;
+}
+#preview-container{
+  margin:auto;
+  transition:0.4s;
+}
+
+
+/* Bottom Mobile Navigation */
+
+.mobile-bottom-nav{
+display:none;
+}
+
+@media (max-width:768px){
+
+.mobile-bottom-nav{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:65px;
+background:#0A3D62;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -5px 20px rgba(0,0,0,0.2);
+z-index:2000;
+}
+
+.mobile-bottom-nav a{
+text-decoration:none;
+color:white;
+font-size:12px;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.mobile-bottom-nav a i{
+font-size:20px;
+margin-bottom:4px;
+}
+
+.mobile-bottom-nav a:hover{
+color:#00E5A8;
+}
+
+/* .mobile-bottom-nav a.active{
+color:#00E5A8;
+} */
+
+.mobile-bottom-nav a.active i{
+transform:scale(1.2);
+}
+.mobile-bottom-nav a.active{
+color:#00E5A8;
+text-shadow:0 0 8px rgba(0,229,168,0.7);
+}
+}
+@media (max-width:768px){
+
+body{
+padding-bottom:80px;
+}
+
+}
+@media (max-width:768px){
+
+.menu-toggle{
+display:none !important;
+}
+
+}
+/* MORE MENU */
+
+.more-menu{
+position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.more-btn{
+background:none;
+border:none;
+color:#666;
+font-size:12px;
+display:flex;
+flex-direction:column;
+align-items:center;
+cursor:pointer;
+}
+
+.more-btn i{
+font-size:20px;
+margin-bottom:4px;
+}
+
+.more-dropdown{
+position:absolute;
+bottom:70px;
+right:0;
+background:white;
+border-radius:12px;
+box-shadow:0 -5px 20px rgba(0,0,0,0.15);
+display:none;
+flex-direction:column;
+min-width:160px;
+overflow:hidden;
+}
+
+.more-dropdown a{
+padding:12px 16px;
+text-decoration:none;
+color:#333;
+font-size:14px;
+display:flex;
+gap:10px;
+align-items:center;
+}
+
+.more-dropdown a:hover{
+background:#f3f4f6;
+color:#0FB9B1;
+}
+
+.more-dropdown.show{
+display:flex;
+}
   </style>
   {% block extra_css %}{% endblock %}
 </head>
@@ -270,6 +459,15 @@ display:none;
           <p>Smart Roads. Safer Cities.</p>
       </div>
   </div>
+
+
+  <!-- Device Preview Dropdown -->
+  <!-- <select id="devicePreview" onchange="changeDeviceView()">
+    <option value="desktop">Desktop</option>
+    <option value="tablet">Tablet</option>
+    <option value="mobile">Mobile</option>
+  </select> -->
+
 
   <!-- Hamburger -->
   <div class="menu-toggle" id="menu-toggle">
@@ -296,9 +494,17 @@ display:none;
 
       <!-- Mobile Logout -->
       {% if 'user_email' in session %}
+
       <li class="mobile-logout">
           <a href="{{ url_for('logout') }}" class="logout-mobile">Logout</a>
       </li>
+
+      {% else %}
+
+      <li class="mobile-logout">
+          <a href="{{ url_for('auth') }}" class="logout-mobile">Sign up / Login</a>
+      </li>
+
       {% endif %}
 
   </ul>
@@ -311,7 +517,61 @@ display:none;
   {% endif %}
 
 </nav>
+  <!-- Mobile Bottom Navigation -->
+<div class="mobile-bottom-nav">
 
+  <a href="{{ url_for('index') }}">
+    <i class="fas fa-home"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="{{ url_for('dashboard') }}">
+    <i class="fas fa-upload"></i>
+    <span>Upload</span>
+  </a>
+
+  <a href="{{ url_for('pothole_map') }}">
+    <i class="fas fa-map"></i>
+    <span>Maps</span>
+  </a>
+
+  <a href="{{ url_for('blog') }}">
+    <i class="fas fa-newspaper"></i>
+    <span>Blogs</span>
+  </a>
+
+  <div class="more-menu">
+
+  <button class="more-btn" onclick="toggleMoreMenu()">
+    <i class="fas fa-bars"></i>
+    <span>More</span>
+  </button>
+
+  <div class="more-dropdown" id="moreDropdown">
+
+    <a href="{{ url_for('about') }}">
+      <i class="fas fa-info-circle"></i> About Us
+    </a>
+
+    <a href="{{ url_for('contact') }}">
+      <i class="fas fa-envelope"></i> Contact
+    </a>
+
+    {% if 'user_email' in session %}
+      <a href="{{ url_for('logout') }}">
+        <i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    {% else %}
+      <a href="{{ url_for('auth') }}">
+        <i class="fas fa-user"></i> Login
+      </a>
+    {% endif %}
+
+  </div>
+
+</div>
+
+</div>
 
   <div class="flash-container">
     {% with messages = get_flashed_messages(with_categories=true) %}
@@ -323,8 +583,15 @@ display:none;
     {% endwith %}
   </div>
 
-  {% block content %}{% endblock %}
+  <!-- <div id="preview-container" class="desktop-view device-wrapper">
 
+  <div class="device-frame"> -->
+
+    {% block content %}{% endblock %}
+
+  <!-- </div> -->
+
+</div>
   <div class="auth-modal" id="loginModal" style="display: none;">
     <div class="auth-card" style="
         position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
@@ -475,6 +742,51 @@ menuToggle.addEventListener("click", function () {
   mobileMenu.classList.toggle("active");
 });
 </script>
+<script>
+function changeDeviceView() {
+  const device = document.getElementById("devicePreview").value;
 
+  document.body.classList.remove("desktop-view", "tablet-view", "mobile-view");
+  document.body.classList.add(device + "-view");
+
+  localStorage.setItem("deviceView", device);
+}
+
+window.addEventListener("load", function () {
+  const saved = localStorage.getItem("deviceView") || "desktop";
+
+  document.body.classList.add(saved + "-view");
+  document.getElementById("devicePreview").value = saved;
+});
+</script>
+<script>
+  function toggleMoreMenu(){
+  const menu = document.getElementById("moreDropdown");
+  menu.classList.toggle("show");
+}
+
+document.addEventListener("click", function(event){
+  const menu = document.getElementById("moreDropdown");
+  const button = document.querySelector(".more-btn");
+
+  if(!button.contains(event.target) && !menu.contains(event.target)){
+    menu.classList.remove("show");
+  }
+});
+
+const bottomLinks = document.querySelectorAll(".mobile-bottom-nav a");
+
+const currentPage = window.location.pathname;
+
+bottomLinks.forEach(link => {
+
+  const linkPage = new URL(link.href).pathname;
+
+  if(linkPage === currentPage){
+      link.classList.add("active");
+  }
+
+});
+</script>
 </body>
 </html>

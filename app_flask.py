@@ -53,7 +53,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'kovirideepika@gmail.com'
-app.config['MAIL_PASSWORD'] = 'bcro rwlj vbvk dkgr'
+app.config['MAIL_PASSWORD'] = 'onmp llml nrgo aecy'
 mail = Mail(app)
 
 AUTHORITY_EMAILS = ['samhithameduri2005@gmail.com', 'navyadeepikasri@gmail.com']
@@ -83,9 +83,9 @@ app.config['VAPID_PUBLIC_KEY'] = VAPID_PUBLIC_KEY
 app.config['VAPID_PRIVATE_KEY'] = VAPID_PRIVATE_KEY
 
 
-TWILIO_SID = "ACd1ef0c3b5e46d10327ed37e3ef4156df"
-TWILIO_TOKEN = "faf489582eaa2b2fca34f2f0b68ad560" 
-TWILIO_PHONE = "+17622144477"
+TWILIO_SID = "AC2dc81b9aa157ead4382e47cb5e788286"
+TWILIO_TOKEN = "4ea2465040dde554f4a72078857570e0" 
+TWILIO_PHONE = "+13187685998"
 AUTHORITY_PHONES = [
     "+919059847261"  
     # "+916301929516",  
@@ -173,81 +173,6 @@ import base64
 from flask import url_for
 
 
-# def send_pothole_alert(report):
-#     import base64
-#     import cv2
-    
-#     image_filename = report['image_url']  
-#     image_path = f"static/uploads/{image_filename}"
-    
-#     print(f"🔍 Looking for NEW image: {image_path}")
-    
-#     image_html = '''
-#     <div style="text-align:center;padding:20px;background:#ecfdf5;border-radius:12px;border:3px solid #22c55e;">
-#         <p style="color:#15803d;font-weight:700;font-size:18px;">📸 NEW STREET IMAGE PROCESSED</p>
-#     </div>
-#     '''
-    
-#     if os.path.exists(image_path):
-#         img = cv2.imread(image_path)
-#         if img is not None:
-#             img_small = cv2.resize(img, (200, 200), interpolation=cv2.INTER_AREA)
-#             _, buffer = cv2.imencode('.jpg', img_small, [cv2.IMWRITE_JPEG_QUALITY, 50])
-#             img_b64 = base64.b64encode(buffer).decode('utf-8')
-            
-#             image_html = f'''
-#             <div style="text-align:center;padding:20px;background:#ecfdf5;border:3px solid #22c55e;border-radius:12px;">
-#                 <img src="data:image/jpeg;base64,{img_b64}" 
-#                      style="width:200px;height:200px;border-radius:10px;border:2px solid #facc15;">
-#                 <p style="color:#15803d;font-weight:700;margin-top:8px;">📸 Fresh Street Photo</p>
-#             </div>
-#             '''
-#             print("✅ NEW IMAGE SHOWS IN EMAIL!")
-    
-#     html_body = f"""
-#     <!DOCTYPE html>
-#     <html><head><meta charset="UTF-8"></head>
-#     <body style="font-family:Segoe UI,sans-serif;margin:0;padding:20px;background:#f1f5f9;">
-#         <div style="max-width:650px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 10px 40px rgba(0,0,0,0.08);">
-#             <div style="background:linear-gradient(135deg,#facc15,#fbbf24);color:white;padding:30px;text-align:center;">
-#                 <h1 style="margin:0;font-size:28px;">🚨 PotholeAI Alert</h1>
-#                 <p style="margin:5px 0 0;opacity:0.95;">Fresh Street Detection</p>
-#             </div>
-#             <div style="padding:35px;">
-#                 <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:25px 0;">
-#                     <div style="background:#f8fafc;padding:25px;border-radius:12px;border-left:5px solid #facc15;">
-#                         <h3 style="color:#1e293b;margin:0 0 15px;">📍 Location</h3>
-#                         <p style="font-size:16px;">{report.get('place_name', 'N/A')}</p>
-#                     </div>
-#                     <div style="background:#f8fafc;padding:25px;border-radius:12px;border-left:5px solid #facc15;">
-#                         <h3 style="color:#1e293b;margin:0 0 15px;">📏 Measurements</h3>
-#                         <p><strong>Depth:</strong> <span style="color:#facc15;font-weight:700;">{report.get('depth',0)}m</span></p>
-#                         <p><strong>Width:</strong> <span style="color:#facc15;font-weight:700;">{report.get('width',0)}m</span></p>
-#                         <p><strong>Potholes:</strong> <span style="color:#ef4444;font-size:20px;">{report.get('pothole_count',0)}</span></p>
-#                     </div>
-#                 </div>
-#                 <div style="text-align:center;padding:20px;background:linear-gradient(135deg,#10b981,#059669);color:white;border-radius:12px;font-size:18px;font-weight:600;">
-#                     {report.get('message', 'Potholes detected')}
-#                 </div>
-#                 {image_html}
-#             </div>
-#             <div style="background:#f8fafc;padding:25px;text-align:center;color:#64748b;font-size:14px;">
-#                 <p>{report.get('created_at', 'Now')} | PotholeAI</p>
-#             </div>
-#         </div>
-#     </body></html>
-#     """
-    
-#     msg = Message(
-#         subject=f"🚨 PotholeAI: {report.get('pothole_count',0)} New Potholes Detected",
-#         sender=app.config['MAIL_USERNAME'],
-#         recipients=AUTHORITY_EMAILS,
-#         html=html_body
-#     )
-    
-#     mail.send(msg)
-#     print("✅ FRESH STREET IMAGE SENT!")
-
 def send_pothole_alert(report):
     import os
     from flask_mail import Message
@@ -320,65 +245,6 @@ def send_pothole_alert(report):
     mail.send(msg)
     print("✅ Alert Email Sent Successfully!")
 
-
-# def send_pothole_alert(report):
-#     import os
-#     from flask_mail import Message
-
-#     image_url = report.get('image_url', '')
-    
-#     if image_url.startswith("static/"):
-#         image_path = image_url
-#     else:
-#         image_path = os.path.join("static/uploads", image_url)
-
-#     print(f"📂 Looking for image at: {image_path}")
-
-#     html_body = f"""
-#     <!DOCTYPE html>
-#     <html>
-#     <body style="font-family:Segoe UI,sans-serif;padding:20px;background:#f1f5f9;">
-#         <div style="max-width:650px;margin:auto;background:white;border-radius:16px;padding:30px;">
-#             <h2 style="color:#ef4444;">🚨 PotholeAI Alert</h2>
-
-#             <p><strong>📍 Location:</strong> {report.get('place_name', 'N/A')}</p>
-#             <p><strong>📏 Depth:</strong> {report.get('depth',0)} m</p>
-#             <p><strong>📐 Width:</strong> {report.get('width',0)} m</p>
-#             <p><strong>🕳 Potholes:</strong> {report.get('pothole_count',0)}</p>
-
-#             <p style="margin-top:20px;font-weight:bold;">
-#                 {report.get('message', 'Potholes detected')}
-#             </p>
-
-#             <p style="margin-top:30px;font-size:14px;color:gray;">
-#                 {report.get('created_at', 'Now')} | PotholeAI System
-#             </p>
-#         </div>
-#     </body>
-#     </html>
-#     """
-
-#     msg = Message(
-#         subject=f"🚨 PotholeAI: {report.get('pothole_count',0)} New Potholes Detected",
-#         sender=app.config['MAIL_USERNAME'],
-#         recipients=AUTHORITY_EMAILS
-#     )
-
-#     msg.html = html_body
-
-#     if os.path.exists(image_path):
-#         with open(image_path, 'rb') as img:
-#             msg.attach(
-#                 filename=os.path.basename(image_path),
-#                 content_type='image/jpeg',
-#                 data=img.read()
-#             )
-#         print("✅ Image attached successfully!")
-#     else:
-#         print("⚠ Image not found. Email sent without attachment.")
-
-#     mail.send(msg)
-#     print("✅ Alert Email Sent Successfully!")
 
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify, abort
 from functools import wraps
@@ -566,23 +432,6 @@ def parse_location_from_form(form):
     
     return None, None, ""
 
-
-# def parse_location_from_form(form):
-#     location_text = (form.get("location_text") or "").strip()
-#     lat_str = (form.get("lat") or "").strip()
-#     lon_str = (form.get("lon") or "").strip()
-
-#     if lat_str and lon_str:
-#         try:
-#             return float(lat_str), float(lon_str), location_text or "User coordinates"
-#         except ValueError:
-#             return None, None, location_text
-
-#     if location_text:
-#         lat, lon = geocode_once(location_text)
-#         return lat, lon, location_text
-
-#     return None, None, ""
 
 
 # ---------------- MAP / ROUTE HELPERS ----------------
@@ -1740,6 +1589,11 @@ def dashboard():
                     }
                     
                     flash(f'✅ {len(pothole_rows)} potholes found & alert sent!', "success")
+                    try:
+                        send_pothole_alert(recommendation_report)
+                        print("✅ EMAIL SENT!")
+                    except Exception as e:
+                        print(f"❌ EMAIL ERROR: {e}")
                     
                 else:  
                     recommendation_report = {
@@ -2033,4 +1887,4 @@ def api_reports():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
